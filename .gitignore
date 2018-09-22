@@ -17,6 +17,7 @@
 *.rar
 *.tar
 *.zip
+/_gulp/node_modules/
 
 # Logs and databases #
 ######################
@@ -68,14 +69,12 @@ Temporary Items
 ###########
 .htaccess
 
-# VisualStudioCode #
-####################
+### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-.history
 
 ### PhpStorm ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
@@ -155,3 +154,4 @@ fabric.properties
 
 # Sonarlint plugin
 .idea/sonarlint
+\.vscode/
