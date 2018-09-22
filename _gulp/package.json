@@ -10,6 +10,7 @@
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.0.1",
     "gulp-sass": "^3.1.0",
+    "lodash": "^4.17.11",
     "uglifyify": "^3.0.1"
   },
   "scripts": {
