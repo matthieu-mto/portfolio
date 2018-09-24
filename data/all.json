@@ -17,7 +17,7 @@
       { "slug": "mysql",   "title": "MySQL" },
       { "slug": "slim",    "title": "Slim" },
       { "slug": "git",    "title": "Git" },
-      { "slug": "adobe",   "title": "Adobe" },
+      { "slug": "adobe",   "title": "Adobe" }
     ],
 
     "socials":
