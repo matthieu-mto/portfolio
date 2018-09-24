@@ -1,31 +1,31 @@
 {
   "general":
-    {
-        "title": "Matthieu TOUSSAINT - Developer",
-        "description": "3rd student @ HETIC - Developer - Freelance consultant"
-    },
+  {
+      "title": "Matthieu TOUSSAINT - Developer",
+      "description": "3rd student @ HETIC - Developer - Freelance consultant"
+  },
 
-    "about":
-    {
-      "description": "Student at <a href='https://www.hetic.net/'>HETIC</a> - ex-trainee at <a href='http://www.uzik.com/'>UZIK</a> - Technology enthusiast - Freelance consultant.",
-      "skills":
-        [
-          { "slug": "html5",   "title": "HTML5" },
-          { "slug": "css3",    "title": "CSS3" },
-          { "slug": "js",      "title": "JS ES6" },
-          { "slug": "php",     "title": "PHP" },
-          { "slug": "mysql",   "title": "MySQL" },
-          { "slug": "slim",    "title": "Slim" },
-          { "slug": "git",    "title": "Git" },
-          { "slug": "adobe",   "title": "Adobe" },
-        ],
+  "about":
+  {
+    "description": "Student at <a href='https://www.hetic.net/'>HETIC</a> - ex-trainee at <a href='http://www.uzik.com/'>UZIK</a> - Technology enthusiast - Freelance consultant.",
+    "skills":
+    [
+      { "slug": "html5",   "title": "HTML5" },
+      { "slug": "css3",    "title": "CSS3" },
+      { "slug": "js",      "title": "JS ES6" },
+      { "slug": "php",     "title": "PHP" },
+      { "slug": "mysql",   "title": "MySQL" },
+      { "slug": "slim",    "title": "Slim" },
+      { "slug": "git",    "title": "Git" },
+      { "slug": "adobe",   "title": "Adobe" },
+    ],
 
-      "socials":
-        [
-          { "slug": "github",   "title": "Github",   "link": "https://github.com/mattmlz/" },
-          { "slug": "twitter",  "title": "Twitter",  "link": "https://twitter.com/matthieu__tou" },
-          { "slug": "linkedin", "title": "LinkedIn", "link": "https://www.linkedin.com/in/matthieu-toussaint/" },
-          { "slug": "mail",     "title": "Mail",     "link": "mailto:matthieu@matthieutoussaint.fr" }
-        ],
-    },
+    "socials":
+    [
+      { "slug": "github",   "title": "Github",   "link": "https://github.com/mattmlz/" },
+      { "slug": "twitter",  "title": "Twitter",  "link": "https://twitter.com/matthieu__tou" },
+      { "slug": "linkedin", "title": "LinkedIn", "link": "https://www.linkedin.com/in/matthieu-toussaint/" },
+      { "slug": "mail",     "title": "Mail",     "link": "mailto:matthieu@matthieutoussaint.fr" }
+    ]
+  }
 }
