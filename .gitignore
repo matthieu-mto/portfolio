@@ -59,15 +59,10 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# Sass #
-########
-.sass-cache/
-*.css.map
-*.scss
-
 # Folders #
 ###########
 .htaccess
+/web
 
 ### VisualStudioCode ###
 .vscode/*
