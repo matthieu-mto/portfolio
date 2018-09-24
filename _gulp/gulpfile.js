@@ -5,15 +5,28 @@ var gulp                = require( 'gulp' ),
     gulp_notify         = require( 'gulp-notify' ),
     gulp_sass           = require( 'gulp-sass' ),
     gulp_autoprefixer   = require( 'gulp-autoprefixer' ),
-    uglifyify           = require( 'uglifyify' );
+    uglifyify           = require( 'uglifyify' ),
+    glsl                = require('glslify'),
+    source              = require('vinyl-source-stream'),
+    gulp_data           = require('gulp-data'),
+    gulp_rename         = require( 'gulp-rename' );
 
 
-/***********
- * OPTIONS *
- **********/
+/************
+* FUNCTIONS *
+************/
+function requireUncached( $module ) {
+    delete require.cache[require.resolve( $module )];
+    return require( $module );
+}
+
+/**********
+* OPTIONS *
+**********/
 var options               = {};
 options.paths             = {};
-options.paths.build       = '../build/';
+options.paths.build       = '../web/';
+options.paths.homepage    = '../html/';
 options.paths.data        = '../data/';
 options.paths.css         = '../src/css/';
 options.paths.sass        = '../src/sass/';
@@ -24,9 +37,9 @@ options.paths.js          = '../src/js/';
 options.sass              = {};
 options.sass.output_style = 'compressed'; // nested | expanded | compact | compressed
 
-/******
- * JS *
- *****/
+/*****
+* JS *
+*****/
 gulp.task( 'js', () =>
 {
     // Browserify
@@ -37,15 +50,154 @@ gulp.task( 'js', () =>
         transform  : ['glslify']
     } )
 
+    .transform(
+        {
+            global : true
+        },
+        'uglifyify'
+    )
+    .bundle()
+
     // Error (plumber not working)
-        .on( 'error', gulp_notify.onError( '<%= error.message %>' ) )
+    .on( 'error', gulp_notify.onError( '<%= error.message %>' ) )
+
+    // Send to build
+    .pipe( source( 'script.js') )
+    .pipe( gulp.dest(
+        `${options.paths.build}src/js/`
+    ) )
+
+    // Notify
+    .pipe( gulp_notify( 'js' ) );
+} );
+
+/*******
+* HTML *
+*******/
+gulp.task( 'html', () =>
+{
+    return gulp.src( `${options.paths.homepage}*.html` )
+
+        // Plumber
+        .pipe( gulp_plumber( {
+            errorHandler : gulp_notify.onError('<%= error.message %>')
+        } ) )
+
+        // Add data
+        .pipe( gulp_data( ( file ) =>
+        {
+            var data = requireUncached( `${options.paths.data}all.json` );
+            data.fs = require( 'fs' )
+            return data;
+        } ) )
 
         // Send to build
-        .pipe( source( 'script.js') )
         .pipe( gulp.dest(
-            `${options.paths.build}src/js/`
+            options.paths.build
         ) )
 
         // Notify
-        .pipe( gulp_notify( 'js' ) );
+        .pipe( gulp_notify( 'html' ) );
+} );
+
+/******
+* CSS *
+******/
+gulp.task( 'css', () =>
+{
+    return gulp.src( `${options.paths.sass}main.scss` )
+
+    // Plumber
+    .pipe( gulp_plumber( {
+        errorHandler : gulp_notify.onError('<%= error.message %>')
+    } ) )
+
+    // SASS
+    .pipe( gulp_sass( {
+        outputStyle : options.sass.output_style
+    } ) )
+
+    // Auto prefixer
+    .pipe( gulp_autoprefixer( {
+        browsers : 'last 50 versions'
+    } ) )
+
+    // Rename
+    .pipe( gulp_rename( 'style.css' ) )
+
+    // Send to build
+    .pipe( gulp.dest(
+        `${options.paths.build}src/css/`
+    ) )
+
+    // Notify
+    .pipe( gulp_notify( 'css' ) );
+} );
+
+/*************
+* COPY FILES *
+*************/
+gulp.task( 'copy', () =>
+{
+return gulp.src(
+        [
+            `${options.paths.fonts}**/**`,
+            `${options.paths.images}**/**`,
+            `${options.paths.medias}**/**`,
+            `${options.paths.css}**/**`,
+        ],
+        {
+            base : './',
+            buffer : false
+        }
+    )
+
+    // Send to build
+    .pipe( gulp.dest(
+        options.paths.build + 'src/'
+    ) )
+
+    // Notify
+    .pipe( gulp_notify( {
+        message : 'copy',
+        onLast  : true
+    } ) );
+} );
+
+/**********
+* DEFAULT *
+**********/
+gulp.task( 'default', [ 'js', 'html', 'css', 'copy' ] );
+
+/********
+* START *
+********/
+gulp.task( 'start', [ 'default', 'watch' ] );
+
+/********
+* WATCH *
+********/
+gulp.task( 'watch', () =>
+{
+    // JS
+    gulp.watch( options.paths.js + '**/*.js', [ 'js' ] );
+
+    // TEMPLATE
+    gulp.watch( options.paths.homepage + '**/*.html', [ 'html' ] );
+
+    // DATA
+    gulp.watch( options.paths.data + '**/*.json', [ 'html' ] );
+
+    // SASS
+    gulp.watch( options.paths.sass + '**/*.scss', [ 'css' ] );
+
+    // COPY
+    gulp.watch(
+        [
+            `${options.paths.fonts}**`,
+            `${options.paths.images}**`,
+            `${options.paths.medias}**`,
+        ],
+        [ 'copy' ]
+    );
 } );
