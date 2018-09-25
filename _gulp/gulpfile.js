@@ -196,16 +196,16 @@ gulp.task('browser-sync', () => {
 gulp.task( 'watch', ['browser-sync'], () =>
 {
     // JS
-    gulp.watch( options.paths.js + '**/*.js', [ 'js' ] );
+    gulp.watch( options.paths.js + '**/*.js', [ 'js' ] ).on('change', browserSync.reload);
 
     // TEMPLATE
-    gulp.watch( options.paths.homepage + '**/*.html', [ 'html' ] );
+    gulp.watch( options.paths.homepage + '**/*.html', [ 'html' ] ).on('change', browserSync.reload);
 
     // DATA
-    gulp.watch( options.paths.data + '**/*.json', [ 'html' ] );
+    gulp.watch( options.paths.data + '**/*.json', [ 'html' ] ).on('change', browserSync.reload);
 
     // SASS
-    gulp.watch( options.paths.sass + '**/*.scss', [ 'css' ] );
+    gulp.watch( options.paths.sass + '**/*.scss', [ 'css' ] ).on('change', browserSync.reload);
 
     // COPY
     gulp.watch(
