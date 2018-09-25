@@ -84,13 +84,13 @@ gulp.task( 'html', () =>
             errorHandler : gulp_notify.onError('<%= error.message %>')
         } ) )
 
-        // Add data
+        /* // Add data
         .pipe( gulp_data( ( file ) =>
         {
             var data = requireUncached( `${options.paths.data}all.json` );
             data.fs = require( 'fs' )
             return data;
-        } ) )
+        } ) ) */
 
         // Send to build
         .pipe( gulp.dest(
