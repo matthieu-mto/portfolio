@@ -10,6 +10,7 @@ var gulp                = require( 'gulp' ),
     source              = require('vinyl-source-stream'),
     gulp_data           = require('gulp-data'),
     gulp_rename         = require( 'gulp-rename' );
+    browserSync         = require('browser-sync').create();
 
 
 /************
@@ -174,10 +175,25 @@ gulp.task( 'default', [ 'js', 'html', 'css', 'copy' ] );
 ********/
 gulp.task( 'start', [ 'default', 'watch' ] );
 
+/**************
+* BrowserSync *
+**************/
+gulp.task('browser-sync', () => {
+    browserSync.init({
+        proxy : 'http://matthieutoussaint.my/',
+        port : 3000,
+        browser: "google chrome",
+        open: true,
+        reloadOnRestart : true,
+        online : true
+    });
+
+});
+
 /********
 * WATCH *
 ********/
-gulp.task( 'watch', () =>
+gulp.task( 'watch', ['browser-sync'], () =>
 {
     // JS
     gulp.watch( options.paths.js + '**/*.js', [ 'js' ] );
