@@ -146,6 +146,7 @@ return gulp.src(
             `${options.paths.images}**/**`,
             `${options.paths.medias}**/**`,
             `${options.paths.css}**/**`,
+            `${options.paths.data}**/**`,
         ],
         {
             base : './',
