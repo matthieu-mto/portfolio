@@ -9,13 +9,13 @@
   "about":
   {
     "description":
-    {
-      "student": "Student at <a href='https://www.hetic.net/'>HETIC</a>",
-      "trainee-uzik": "Ex-trainee at <a href='http://www.uzik.com/'>UZIK</a>",
-      "technology": "Technology enthusiast",
-      "freelance": "Freelance consultant"
-    },
-    
+    [
+      {"class": "student", "content": "Student at <a href='https://www.hetic.net/'>HETIC</a>"},
+      {"class": "trainee-uzik", "content": "Ex-trainee at <a href='http://www.uzik.com/'>UZIK</a>"},
+      {"class": "technology", "content": "Technology enthusiastic"},
+      {"class": "freelance", "content": "Freelance consultant"}
+    ],
+
     "skills":
     [
       { "slug": "html5",   "title": "HTML5" },

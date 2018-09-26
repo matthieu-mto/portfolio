@@ -2,7 +2,7 @@ const requestURL = 'http://localhost:3000/data/all.json'
 const request = new XMLHttpRequest()
 
 const $header = document.querySelector('header.header')
-const $about = document.querySelector('section.about')
+const $section_about = document.querySelector('section.about')
 
 request.open('GET', requestURL)
 request.responseType = 'json'
@@ -27,5 +27,11 @@ function section_header(jsonObj) {
 }
 
 function section_about(jsonObj) {
+    const about = jsonObj['about']
+    const description = about.description
+    const $description = $section_about.querySelector('div.description')
 
+    for(var i=0; i < description.length; i++) {
+        $description.innerHTML += "<p class='"+description[i].class+"'>"+description[i].content+"<p/>"
+    }
 }
