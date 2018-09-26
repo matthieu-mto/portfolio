@@ -1,4 +1,4 @@
-#GULP
+# GULP
 
 Use `npm install` to have all dependencies.
 
