@@ -1,22 +1,25 @@
 header.header {
-  width: 100vw;
-  height: 100vh;
   color: $white;
   font-family: $font-office;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 
   h1.title {
-    padding: $padding-h1;
+    margin: $margin-50;
     font-weight: $font-weight-bold;
     font-size: $h1;
   }
+
   p.description {
-    padding: $padding-p;
+    margin: $margin-20;
     font-weight: $font-weight-medium;
     font-size: $p;
     line-height: 25px;
+  }
+
+  img.profile-picture {
+    margin: $margin-20;
+    filter: $black-white;
   }
 }
