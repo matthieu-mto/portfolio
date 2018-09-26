@@ -3,3 +3,12 @@ body {
   color: $white;
   font-family: $font-office;
 }
+
+section {
+  margin: $margin-100 0;
+
+  h2 {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-20;
+  }
+}
