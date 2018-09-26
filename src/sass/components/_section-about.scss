@@ -3,7 +3,13 @@ section.about {
   flex-direction: column;
   align-items: center;
 
-  p.description {
+  div.description {
+    text-align: center;
 
+    p {
+      margin: $margin-10;
+    }
   }
+
+
 }

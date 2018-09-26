@@ -14,6 +14,7 @@ request.onload = function() {
     section_about(response)
 }
 
+//Generate header
 function section_header(jsonObj) {
     const $general_title = $header.querySelector('h1.title')
     $general_title.innerHTML = jsonObj['general'].title
@@ -26,12 +27,17 @@ function section_header(jsonObj) {
 
 }
 
+//Generate about section
 function section_about(jsonObj) {
     const about = jsonObj['about']
     const description = about.description
     const $description = $section_about.querySelector('div.description')
 
+    //Generate about descriptions
     for(var i=0; i < description.length; i++) {
-        $description.innerHTML += "<p class='"+description[i].class+"'>"+description[i].content+"<p/>"
+        const $descriptions = document.createElement('p')
+        $descriptions.innerHTML = description[i].content
+        $descriptions.classList.add(description[i].class)
+        $description.appendChild($descriptions)
     }
 }
