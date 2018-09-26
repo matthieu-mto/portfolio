@@ -1,11 +1,20 @@
-// Fonts
-$fontweight-thin: 100;
-$fontweight-light: 300;
-$fontweight-regular: 500;
-$fontweight-semiBold: 600;
-$fontweight-bold: 700;
-$fontweight-book: 900;
+/* FONTS */
+$font-office : 'Office-code-pro';
+  // Font weights, according to Mozilla's recommendations :
 
-//Colors
+  // 100 : Thin
+  // 300 : Light
+  // 400 : Regular
+  // 500 : Medium
+  // 600 : Semi-Bold
+  // 700 : Bold
+  // 800 : Black
+
+$font-weight-light    : 300;
+$font-weight-regular  : 400;
+$font-weight-medium   : 500;
+$font-weight-bold     : 700;
+
+/* COLORS */
 $black: #010101;
 $white: #F1F1F1;
