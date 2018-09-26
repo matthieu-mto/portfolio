@@ -3,4 +3,20 @@ header.header {
   height: 100vh;
   color: $white;
   font-family: $font-office;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1.title {
+    padding: $padding-h1;
+    font-weight: $font-weight-bold;
+    font-size: $h1;
+  }
+  p.description {
+    padding: $padding-p;
+    font-weight: $font-weight-medium;
+    font-size: $p;
+    line-height: 25px;
+  }
 }
