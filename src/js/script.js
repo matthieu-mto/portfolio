@@ -16,4 +16,7 @@ function general(jsonObj) {
   const $general_title = $header.querySelector('h1.title')
   $general_title.innerHTML = jsonObj['general'].title
 
+  const $general_description = $header.querySelector('p.description')
+  $general_description.innerHTML = jsonObj['general'].description
+
 }
