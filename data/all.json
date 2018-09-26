@@ -8,7 +8,14 @@
 
   "about":
   {
-    "description": "Student at <a href='https://www.hetic.net/'>HETIC</a> - ex-trainee at <a href='http://www.uzik.com/'>UZIK</a> - Technology enthusiast - Freelance consultant.",
+    "description":
+    {
+      "student": "Student at <a href='https://www.hetic.net/'>HETIC</a>",
+      "trainee-uzik": "Ex-trainee at <a href='http://www.uzik.com/'>UZIK</a>",
+      "technology": "Technology enthusiast",
+      "freelance": "Freelance consultant"
+    },
+    
     "skills":
     [
       { "slug": "html5",   "title": "HTML5" },
