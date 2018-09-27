@@ -24,7 +24,7 @@
       { "slug": "php",     "title": "PHP" },
       { "slug": "mysql",   "title": "MySQL" },
       { "slug": "slim",    "title": "Slim" },
-      { "slug": "git",    "title": "Git" },
+      { "slug": "git",     "title": "Git" },
       { "slug": "adobe",   "title": "Adobe" }
     ],
 
@@ -35,5 +35,18 @@
       { "slug": "linkedin", "title": "LinkedIn", "link": "https://www.linkedin.com/in/matthieu-toussaint/" },
       { "slug": "mail",     "title": "Mail",     "link": "mailto:matthieu@matthieutoussaint.fr" }
     ]
+  },
+
+
+  "projects":
+  {
+    "toto":
+    {
+      "slug": "toto",
+      "title": "toto",
+      "description": "Lorem Ipsum dolor sit amet.",
+      "preview": "src/medias/previews/toto.png",
+      "link": "http://google.fr"
+    }
   }
 }
