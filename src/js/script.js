@@ -1,12 +1,14 @@
+//Request for datas
 const requestURL = 'http://localhost:3000/data/all.json'
 const request = new XMLHttpRequest()
-
-const $header = document.querySelector('header.header')
-const $section_about = document.querySelector('section.about')
-
 request.open('GET', requestURL)
 request.responseType = 'json'
 request.send()
+
+//Variables
+const $header = document.querySelector('header.header')
+const $section_about = document.querySelector('section.about')
+
 
 request.onload = function() {
     const response = request.response
