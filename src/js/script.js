@@ -36,6 +36,8 @@ function section_about(jsonObj) {
     const $description = $section_about.querySelector('div.description')
     const skills = about.skills
     const $skills = $section_about.querySelector('div.skills')
+    const socials = about.socials
+    const $socials = $section_about.querySelector('div.socials')
 
     //Generate about descriptions
     for(var i=0; i < description.length; i++) {
@@ -64,5 +66,33 @@ function section_about(jsonObj) {
         $skill.appendChild($skill_p)
 
         $skills.appendChild($skill)
+    }
+
+    //Generate about socials
+    for(var i=0; i < socials.length; i++) {
+        const $social = document.createElement('div')
+        $social.classList.add('social')
+        $social.classList.add(socials[i].slug)
+        const $social_img = document.createElement('img')
+        const $social_p = document.createElement('p')
+        const $social_link = document.createElement('a')
+
+        $social_img.src = 'src/img/svg/'+socials[i].slug+'.svg'
+        $social_img.alt = socials[i].slug
+        $social_img.classList.add(socials[i].slug)
+
+
+        $social_p.innerHTML = socials[i].title
+        $social_p.classList.add('social-name')
+
+        $social_link.setAttribute('href', socials[i].link)
+        $social_link.setAttribute('target', '_blank')
+
+        $social_link.appendChild($social_img)
+        $social_link.appendChild($social_p)
+        $social.appendChild($social_link)
+
+        $socials.appendChild($social)
+
     }
 }

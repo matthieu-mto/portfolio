@@ -39,4 +39,43 @@ section.about {
       }
     }
   }
+
+
+  div.socials {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    div.social {
+      width: 100px;
+      height: 100px;
+      margin: $margin-20;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.5;
+      }
+
+      a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+
+        img {
+          width: 40px;
+          height: 40px;
+        }
+
+        p.social-name {
+          font-weight: $font-weight-light;
+          font-size: $font-size-15;
+          text-align: center;
+          margin-top: $margin-10;
+        }
+      }
+    }
+  }
 }
