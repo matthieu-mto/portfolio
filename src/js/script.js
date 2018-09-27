@@ -34,6 +34,8 @@ function section_about(jsonObj) {
     const about = jsonObj['about']
     const description = about.description
     const $description = $section_about.querySelector('div.description')
+    const skills = about.skills
+    const $skills = $section_about.querySelector('div.skills')
 
     //Generate about descriptions
     for(var i=0; i < description.length; i++) {
@@ -41,5 +43,23 @@ function section_about(jsonObj) {
         $descriptions.innerHTML = description[i].content
         $descriptions.classList.add(description[i].class)
         $description.appendChild($descriptions)
+    }
+
+    //Generate about skills
+    for(var i=0; i < skills.length; i++) {
+        const $skill = document.createElement('div')
+        $skill.classList.add('skill')
+        const $skill_img = document.createElement('img')
+        const $skill_p = document.createElement('p')
+
+        $skill_img.src = 'src/img/svg/'+skills[i].slug+'.svg'
+        $skill_img.alt = skills[i].slug
+
+        $skill_p.innerHTML = skills[i].title
+
+        $skill.appendChild($skill_img)
+        $skill.appendChild($skill_p)
+
+        $skills.appendChild($skill)
     }
 }
