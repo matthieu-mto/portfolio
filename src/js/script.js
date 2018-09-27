@@ -54,8 +54,10 @@ function section_about(jsonObj) {
 
         $skill_img.src = 'src/img/svg/'+skills[i].slug+'.svg'
         $skill_img.alt = skills[i].slug
+        $skill_img.classList.add(skills[i].slug)
 
         $skill_p.innerHTML = skills[i].title
+        $skill_p.classList.add('skill-name')
 
         $skill.appendChild($skill_img)
         $skill.appendChild($skill_p)
