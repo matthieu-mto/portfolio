@@ -49,6 +49,7 @@ function section_about(jsonObj) {
     for(var i=0; i < skills.length; i++) {
         const $skill = document.createElement('div')
         $skill.classList.add('skill')
+        $skill.classList.add(skills[i].slug)
         const $skill_img = document.createElement('img')
         const $skill_p = document.createElement('p')
 
