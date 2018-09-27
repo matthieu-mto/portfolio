@@ -11,5 +11,8 @@ section.about {
     }
   }
 
-
+  div.skills {
+    display: flex;
+    flex-direction: column;
+  }
 }
