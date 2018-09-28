@@ -39,7 +39,7 @@
 
 
   "projects":
-  {
+  [
     "player":
     {
       "slug": "player",
@@ -80,5 +80,5 @@
       "description": "Pokedex is a school project using Slim Framework, and Twig.",
       "link": "http://lab.matthieutoussaint.fr/pokedex/"
     }
-  }
+  ]
 }
