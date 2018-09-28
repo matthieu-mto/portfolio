@@ -45,6 +45,7 @@
       "title": "Bigflo &#38; Oli - Player video",
       "date": "November 2017",
       "description": "We had, for a school project, the instruction to develop a video player from scratch. My choice fell on a video of the French rap group Bigflo &#38; Oli.",
+      "preview": "src/medias/player.png",
       "link": "http://lab.matthieutoussaint.fr/bigflo-oli-player/"
     },
     {
@@ -74,6 +75,13 @@
       "date": "June 2018",
       "description": "Pokedex is a school project using Slim Framework, and Twig.",
       "link": "http://lab.matthieutoussaint.fr/pokedex/"
+    },
+    {
+      "slug": "graduation-video",
+      "title": "Video realisation for HETIC graduation",
+      "date": "June 2018",
+      "description": "I had the opportunity to work with the director of HETIC to create and edit the graduation video for the 2017's promotion of HETIC.",
+      "link": "https://vimeo.com/278643634"
     }
   ]
 }
