@@ -6,4 +6,6 @@
 /* COMPONENTS */
 @import "components/general";
 @import "components/header";
-@import "components/section-about";
+  //Sections
+  @import "components/sections/about";
+  @import "components/sections/projects";
