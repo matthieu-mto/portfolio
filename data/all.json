@@ -10,8 +10,8 @@
   {
     "description":
     [
-      {"class": "student", "content": "Student at <a href='https://www.hetic.net/'>HETIC</a>"},
-      {"class": "trainee-uzik", "content": "Ex-trainee at <a href='http://www.uzik.com/'>UZIK</a>"},
+      {"class": "student", "content": "Student at <a href='https://www.hetic.net/' target='_blank'>HETIC</a>"},
+      {"class": "trainee-uzik", "content": "Ex-trainee at <a href='http://www.uzik.com/' target='_blank'>UZIK</a>"},
       {"class": "technology", "content": "Technology enthusiastic"},
       {"class": "freelance", "content": "Freelance consultant"}
     ],
