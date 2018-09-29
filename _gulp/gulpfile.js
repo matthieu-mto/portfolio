@@ -9,7 +9,7 @@ var gulp                = require( 'gulp' ),
     glsl                = require('glslify'),
     source              = require('vinyl-source-stream'),
     gulp_data           = require('gulp-data'),
-    gulp_rename         = require( 'gulp-rename' );
+    gulp_rename         = require( 'gulp-rename' ),
     browserSync         = require('browser-sync').create();
 
 
