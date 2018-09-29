@@ -2,4 +2,31 @@ section.projects {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  div.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    div.project {
+      margin: $margin-30;
+      width: 350px;
+
+      p {
+        font-weight: $font-weight-light;
+        font-size: $font-size-15;
+      }
+
+      img {
+        width: 300px;
+        height: auto;
+        margin-top: $margin-20;
+      }
+
+      a {
+        display: block;
+        margin-top: $margin-20;
+      }
+    }
+  }
 }

@@ -45,43 +45,48 @@
       "title": "Bigflo &#38; Oli - Player video",
       "date": "November 2017",
       "description": "We had, for a school project, the instruction to develop a video player from scratch. My choice fell on a video of the French rap group Bigflo &#38; Oli.",
-      "preview": "src/medias/player.png",
-      "link": "http://lab.matthieutoussaint.fr/bigflo-oli-player/"
+      "link": "http://lab.matthieutoussaint.fr/bigflo-oli-player/",
+      "preview": true
     },
     {
       "slug": "spacex",
       "title": "SpaceX - BFR",
       "date": "December 2017",
       "description": "During an intensive week, we had to realize as a team a complete site on one of the subjects dealt with by SpaceX. We decided to work on the Big Falcon Rocket (BFR).",
-      "link": "http://lab.matthieutoussaint.fr/spacex/"
+      "link": "http://lab.matthieutoussaint.fr/spacex/",
+      "preview": true
     },
     {
       "slug": "weather-companion",
       "title": "Weather Companion",
       "date": "March 2018",
       "description": "Weather companion is a school project which will be able to ask you your destination, so you can discover if the weather will be good to drive with your motorbike or your scooter, from your location (detected by Google Maps Geolocation API) to your destination.",
-      "link": "http://lab.matthieutoussaint.fr/weather-companion/"
+      "link": "http://lab.matthieutoussaint.fr/weather-companion/",
+      "preview": false
     },
     {
       "slug": "super-voisin",
       "title": "Super Voisin",
       "date": "April 2018",
       "description": "Super Voisin is a school project realized in group during an intensive week. Super Voisin is based on a system of exchange of services against a virtual currency: the 'Super Coins'. The superheroes who offer their services do not do so not financial interest but only because they want to help their neighbors. Users can buy 'Super Coins', the money collected can cover the running costs of the site.",
-      "link": "http://super-voisin.matthieutoussaint.fr"
+      "link": "http://super-voisin.matthieutoussaint.fr",
+      "preview": true
     },
     {
       "slug": "pokedex",
       "title": "Pokedex",
       "date": "June 2018",
       "description": "Pokedex is a school project using Slim Framework, and Twig.",
-      "link": "http://lab.matthieutoussaint.fr/pokedex/"
+      "link": "http://lab.matthieutoussaint.fr/pokedex/",
+      "preview": false
     },
     {
       "slug": "graduation-video",
       "title": "Video realisation for HETIC graduation",
       "date": "June 2018",
       "description": "I had the opportunity to work with the director of HETIC to create and edit the graduation video for the 2017's promotion of HETIC.",
-      "link": "https://vimeo.com/278643634"
+      "link": "https://vimeo.com/278643634",
+      "preview": true
     }
   ]
 }

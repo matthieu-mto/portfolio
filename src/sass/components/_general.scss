@@ -12,4 +12,13 @@ section {
     font-size: $font-size-20;
     margin: $margin-30 0 0 0;
   }
+  h3 {
+    font-weight: $font-weight-medium;
+    font-size: $font-size-18;
+  }
+  h4 {
+    font-weight: $font-weight-regular;
+    font-size: $font-size-18;
+    margin-bottom: $margin-10;
+  }
 }

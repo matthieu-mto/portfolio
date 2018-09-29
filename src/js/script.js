@@ -1,22 +1,24 @@
-//Request for datas
+/* Request for datas */
 const requestURL = 'http://localhost:3000/data/all.json'
 const request = new XMLHttpRequest()
 request.open('GET', requestURL)
 request.responseType = 'json'
 request.send()
 
-//Variables
+/* Variables */
 const $header = document.querySelector('header.header')
 const $section_about = document.querySelector('section.about')
+const $section_projects = document.querySelector('section.projects')
 
-
+/* Functions - generation of content in HTML */
 request.onload = function() {
     const response = request.response
     section_header(response)
     section_about(response)
+    section_projects(response)
 }
 
-//Generate header
+/* Generate header */
 function section_header(jsonObj) {
     const $general_title = $header.querySelector('h1.title')
     $general_title.innerHTML = jsonObj['general'].title
@@ -29,7 +31,7 @@ function section_header(jsonObj) {
 
 }
 
-//Generate about section
+/* Generate about section */
 function section_about(jsonObj) {
     const about = jsonObj['about']
     const description = about.description
@@ -93,6 +95,49 @@ function section_about(jsonObj) {
         $social.appendChild($social_link)
 
         $socials.appendChild($social)
+    }
+}
 
+/* Generate projects */
+function section_projects(jsonObj) {
+    const projects = jsonObj['projects']
+    const $projects = $section_projects.querySelector('div.projects')
+
+    for(var i=0; i < projects.length; i++) {
+        const $project = document.createElement('div')
+        const $project_title = document.createElement('h3')
+        const $project_date = document.createElement('h4')
+        const $project_description = document.createElement('p')
+
+        $project.classList.add('project', projects[i].slug)
+
+        $project_title.innerHTML = projects[i].title
+        $project_date.innerHTML = projects[i].date
+        $project_description.innerHTML = projects[i].description
+
+        $project.appendChild($project_title)
+        $project.appendChild($project_date)
+        $project.appendChild($project_description)
+
+        if(projects[i].preview == true) {
+            const $project_preview = document.createElement('img')
+
+            $project_preview.src = 'src/medias/previews/'+projects[i].slug+'.png'
+            $project_preview.alt = projects[i].slug
+
+            $project.appendChild($project_preview)
+        }
+
+        if(projects[i].link) {
+            const $project_link = document.createElement('a')
+
+            $project_link.setAttribute('href', projects[i].link)
+            $project_link.setAttribute('target', '_blank')
+            $project_link.innerHTML = 'discover'
+
+            $project.appendChild($project_link)
+        }
+
+        $projects.appendChild($project)
     }
 }
