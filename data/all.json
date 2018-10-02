@@ -87,6 +87,14 @@
       "description": "I had the opportunity to work with the director of HETIC to create and edit the graduation video for the 2017's promotion of HETIC.",
       "link": "https://vimeo.com/278643634",
       "preview": true
+    },
+    {
+      "slug": "wizer",
+      "title": "Mini site for an app",
+      "date": "Octobre 2018",
+      "description": "We had to create a product for a school projet about reading. We decided to think about an app which facilitate the storing the data of an article. I developed a mini-site to present this application project.",
+      "link": "http://lab.matthieutoussaint.fr/wizer/",
+      "preview": false
     }
   ]
 }
