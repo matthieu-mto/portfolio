@@ -15,17 +15,32 @@ section.projects {
       p {
         font-weight: $font-weight-light;
         font-size: $font-size-15;
+        height: 150px;
       }
 
       img {
         width: 300px;
-        height: auto;
+        height: 170px;
         margin-top: $margin-20;
       }
 
       a {
         display: block;
         margin-top: $margin-20;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  section.projects {
+    div.projects {
+      div.project {
+        width: 300px!important;
+
+        p {
+          height: auto;
+        }
       }
     }
   }
