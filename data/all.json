@@ -73,14 +73,6 @@
       "preview": true
     },
     {
-      "slug": "pokedex",
-      "title": "Pokedex",
-      "date": "June 2018",
-      "description": "Pokedex is a school project using Slim Framework, and Twig.",
-      "link": "http://lab.matthieutoussaint.fr/pokedex/",
-      "preview": false
-    },
-    {
       "slug": "graduation-video",
       "title": "Video realisation for HETIC graduation",
       "date": "June 2018",
