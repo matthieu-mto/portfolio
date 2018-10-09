@@ -62,7 +62,7 @@
       "date": "March 2018",
       "description": "Weather companion is a school project which will be able to ask you your destination, so you can discover if the weather will be good to drive with your motorbike or your scooter, from your location (detected by Google Maps Geolocation API) to your destination.",
       "link": "http://lab.matthieutoussaint.fr/weather-companion/",
-      "preview": false
+      "preview": true
     },
     {
       "slug": "super-voisin",
@@ -94,7 +94,7 @@
       "date": "Octobre 2018",
       "description": "We had to create a product for a school projet about reading. We decided to think about an app which facilitate the storing the data of an article. I developed a mini-site to present this application project.",
       "link": "http://lab.matthieutoussaint.fr/wizer/",
-      "preview": false
+      "preview": true
     }
   ]
 }
