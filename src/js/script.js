@@ -117,16 +117,6 @@ function section_projects(jsonObj) {
 
         $project.appendChild($project_title)
         $project.appendChild($project_date)
-        $project.appendChild($project_description)
-
-        if(projects[i].preview == true) {
-            const $project_preview = document.createElement('img')
-
-            $project_preview.src = 'src/medias/previews/'+projects[i].slug+'.png'
-            $project_preview.alt = projects[i].slug
-
-            $project.appendChild($project_preview)
-        }
 
         if(projects[i].link) {
             const $project_link = document.createElement('a')
@@ -137,6 +127,18 @@ function section_projects(jsonObj) {
 
             $project.appendChild($project_link)
         }
+
+        if(projects[i].preview == true) {
+            const $project_preview = document.createElement('img')
+
+            $project_preview.src = 'src/medias/previews/'+projects[i].slug+'.png'
+            $project_preview.alt = projects[i].slug
+
+            $project.appendChild($project_preview)
+        }
+
+        $project.appendChild($project_description)
+
 
         $projects.appendChild($project)
     }
