@@ -37,9 +37,15 @@ section.projects {
   section.projects {
     div.projects {
       div.project {
-        width: 300px!important;
+        width: 300px;
 
         p {
+          width: 300px;
+          height: auto;
+        }
+
+        img {
+          width: 300px;
           height: auto;
         }
       }
