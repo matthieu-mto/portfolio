@@ -1,10 +1,8 @@
-$screen-breakpoints : (
-        xxs     : 320px, // rarely use
-        xs      : 550px,
-        s       : 750px,
-        m       : 980px,
-        l       : 1200px,
-        xl      : 1400px,
-        xxl     : 1600px,
-        xxxl    : 1820px
-);
+$screen-xxs:  320px;
+$screen-xs:   550px;
+$screen-s:    750px;
+$screen-m:    980px;
+$screen-l:    1200px;
+$screen-xl:   1400px;
+$screen-xxl:  1600px;
+$screen-xxxl: 1820px;
