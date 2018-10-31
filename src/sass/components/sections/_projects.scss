@@ -33,7 +33,27 @@ section.projects {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: $screen-m) {
+  section.projects {
+    div.projects {
+      div.project {
+        width: 400px;
+
+        p {
+          width: 400px;
+          height: auto;
+        }
+
+        img {
+          width: 400px;
+          height: 225px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $screen-xxs) {
   section.projects {
     div.projects {
       div.project {
