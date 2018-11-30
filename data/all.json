@@ -87,6 +87,14 @@
       "description": "We had to create a product for a school projet about reading. We decided to think about an app which facilitate the storing the data of an article. I developed a mini-site to present this application project.",
       "link": "http://lab.matthieutoussaint.fr/wizer/",
       "preview": true
+    },
+    {
+      "slug": "ecologia",
+      "title": "Wordpress project about ecology",
+      "date": "Octobre 2018",
+      "description": "For a school project, we had to create a wordpress theme about ecology.",
+      "link": "http://ecologia.matthieutoussaint.fr/",
+      "preview": true
     }
   ]
 }
