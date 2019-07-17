@@ -11,7 +11,7 @@
     "description":
     [
       {"class": "student", "content": "Student at <a href='https://www.hetic.net/' target='_blank'>HETIC</a>"},
-      {"class": "trainee-uzik", "content": "Ex intern at <a href='http://www.uzik.com/' target='_blank'>UZIK</a>"},
+      {"class": "intern-taiko", "content": "Web Engineer at <a href='http://www.uzik.com/' target='_blank'>Taikonauten, Berlin</a>"},
       {"class": "technology", "content": "Technology enthusiastic"},
       {"class": "freelance", "content": "Freelance consultant"}
     ],
