@@ -18,7 +18,6 @@
 *.tar
 *.zip
 /_gulp/node_modules/
-/_gulp/package-lock.json
 
 # Logs and databases #
 ######################
