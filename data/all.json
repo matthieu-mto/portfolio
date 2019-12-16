@@ -3,7 +3,7 @@
   {
       "title": "Matthieu TOUSSAINT - Developer",
       "picture": "src/medias/profile-picture-round.png",
-      "description": "3rd year student @ HETIC<br />Developer<br />Freelance consultant"
+      "description": "4th year student @ HETIC<br />Developer<br />Freelance consultant"
   },
 
   "about":
@@ -11,7 +11,7 @@
     "description":
     [
       {"class": "student", "content": "Student at <a href='https://www.hetic.net/' target='_blank'>HETIC</a>"},
-      {"class": "intern-taiko", "content": "Web Engineer at <a href='http://www.taikonauten.com/' target='_blank'>Taikonauten</a>"},
+      {"class": "intern-taiko", "content": "Ex Web Engineer at <a href='http://www.taikonauten.com/' target='_blank'>Taikonauten</a>"},
       {"class": "technology", "content": "Technology enthusiastic"},
       {"class": "freelance", "content": "Freelance consultant"}
     ],
@@ -85,7 +85,7 @@
     {
       "slug": "wizer",
       "title": "Mini site for an app",
-      "date": "Octobre 2018",
+      "date": "October 2018",
       "description": "We had to create a product for a school projet about reading. We decided to think about an app which facilitate the storing the data of an article. I developed a mini-site to present this application project.",
       "link": "http://lab.matthieutoussaint.fr/wizer/",
       "preview": true
@@ -93,9 +93,25 @@
     {
       "slug": "ecologia",
       "title": "Wordpress project about ecology",
-      "date": "Octobre 2018",
+      "date": "October 2018",
       "description": "For a school project, we had to create a wordpress theme about ecology.",
       "link": "https://matthieutoussaint.fr/notfound/index.html",
+      "preview": true
+    },
+    {
+      "slug": "hypatos",
+      "title": "Hypatos phase 2",
+      "date": "September 2019",
+      "description": "During my internship at Taikonauten, I worked on the phase 2 of Hypatos website",
+      "link": "http://hypatos.ai/",
+      "preview": true
+    },
+    {
+      "slug": "weisser-ring",
+      "title": "Weisser Ring - winter animation",
+      "date": "October 2019",
+      "description": "During my internship at Taikonauten, I worked on a winter animation for Weisser Ring",
+      "link": "https://spenden.weisser-ring.de/",
       "preview": true
     }
   ]
