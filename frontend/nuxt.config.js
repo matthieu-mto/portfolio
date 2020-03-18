@@ -26,11 +26,15 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: [
+    'uikit/dist/css/uikit.min.css',
+    'uikit/dist/css/uikit.css',
+    '@assets/css/main.css'
+  ],
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [{ src: '~/plugins/uikit.js', ssr: false }],
   /*
    ** Nuxt.js dev-modules
    */
