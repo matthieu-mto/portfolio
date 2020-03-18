@@ -1,5 +1,8 @@
 export default {
   mode: 'universal',
+  env: {
+    strapiBaseUri: process.env.API_URL || 'http://localhost:1337'
+  },
   /*
    ** Headers of the page
    */
@@ -40,7 +43,14 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: ['@nuxtjs/apollo'],
+  apollo: {
+    clientConfigs: {
+      default: {
+        httpEndpoint: process.env.BACKEND_URL || 'http://localhost:1337/graphql'
+      }
+    }
+  },
   /*
    ** Build configuration
    */
