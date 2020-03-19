@@ -7,14 +7,14 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Matthieu TOUSSAINT',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content: 'Matthieu TOUSSAINT | Fullstack web developer - Portfolio'
       }
     ],
     link: [
@@ -22,10 +22,6 @@ export default {
         rel: 'icon',
         type: 'image/x-icon',
         href: '/favicon.ico'
-      },
-      {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Staatliches'
       }
     ]
   },
@@ -36,11 +32,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [
-    'uikit/dist/css/uikit.min.css',
-    'uikit/dist/css/uikit.css',
-    '@assets/css/main.css'
-  ],
+  css: ['uikit/dist/css/uikit.min.css', 'uikit/dist/css/uikit.css'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -52,7 +44,8 @@ export default {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
-    '@nuxtjs/stylelint-module'
+    '@nuxtjs/stylelint-module',
+    '@nuxtjs/dotenv'
   ],
   /*
    ** Nuxt.js modules
