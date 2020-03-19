@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "@nuxtjs/apollo": "^4.0.0-rc19",
+    "@nuxtjs/markdownit": "^1.2.9",
     "graphql": "^14.6.0",
     "node-sass": "^4.13.1",
     "nuxt": "^2.0.0",

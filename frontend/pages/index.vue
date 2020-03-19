@@ -16,6 +16,7 @@ import socialsQuery from '~/apollo/queries/social/socials'
 import projectsQuery from '~/apollo/queries/project/projects'
 
 export default {
+  components: {},
   data() {
     return {
       header: {},
@@ -46,8 +47,7 @@ export default {
       prefetch: true,
       query: projectsQuery
     }
-  },
-  components: {}
+  }
 }
 </script>
 
