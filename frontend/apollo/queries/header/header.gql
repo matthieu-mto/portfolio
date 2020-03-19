@@ -1,0 +1,10 @@
+query Header {
+  header {
+    id
+    website_title
+    description
+    profile_picture {
+      url
+    }
+  }
+}
