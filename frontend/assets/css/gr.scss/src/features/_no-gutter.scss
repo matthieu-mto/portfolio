@@ -1,0 +1,141 @@
+
+// ==============
+// build classes
+// ==============
+
+@mixin _gr-build-modifier-no-gutter-classes($breakpoint) {
+
+  $no-gutter-row-selector: '.#{$gr-namespace-class}-#{$gr-row-class}--no-gutter';
+  $no-gutter-row-selector-left: '.#{$gr-namespace-class}-#{$gr-row-class}--no-gutter-left';
+  $no-gutter-row-selector-right: '.#{$gr-namespace-class}-#{$gr-row-class}--no-gutter-right';
+
+  $no-gutter-col-selector: '.#{$gr-namespace-class}--no-gutter';
+  $no-gutter-col-selector-left: '.#{$gr-namespace-class}--no-gutter-left';
+  $no-gutter-col-selector-right: '.#{$gr-namespace-class}--no-gutter-right';
+
+  @if $breakpoint {
+
+    $no-gutter-row-selector: '#{$no-gutter-row-selector}, #{$no-gutter-row-selector}#{$gr-breakpoint-class-divider}#{$breakpoint}';
+    $no-gutter-row-selector-left: '#{$no-gutter-row-selector-left}, #{$no-gutter-row-selector-left}#{$gr-breakpoint-class-divider}#{$breakpoint}';
+    $no-gutter-row-selector-right: '#{$no-gutter-row-selector-right}, #{$no-gutter-row-selector-right}#{$gr-breakpoint-class-divider}#{$breakpoint}';
+
+    $no-gutter-col-selector: '#{$no-gutter-col-selector}, #{$no-gutter-col-selector}#{$gr-breakpoint-class-divider}#{$breakpoint}';
+    $no-gutter-col-selector-left: '#{$no-gutter-col-selector-left}, #{$no-gutter-col-selector-left}#{$gr-breakpoint-class-divider}#{$breakpoint}';
+    $no-gutter-col-selector-right: '#{$no-gutter-col-selector-right}, #{$no-gutter-col-selector-right}#{$gr-breakpoint-class-divider}#{$breakpoint}';
+  }
+
+  #{$no-gutter-row-selector} {
+
+    @include _gr-row-no-gutter;
+  }
+
+  #{$no-gutter-row-selector-left} {
+
+    @include _gr-row-no-gutter(true);
+  }
+
+  #{$no-gutter-row-selector-right} {
+
+    @include _gr-row-no-gutter(false, true);
+  }
+
+  #{$no-gutter-col-selector} {
+
+    @include _gr-col-no-gutter;
+  }
+
+  #{$no-gutter-col-selector-left} {
+
+    @include _gr-col-no-gutter(true);
+  }
+
+  #{$no-gutter-col-selector-right} {
+
+    @include _gr-col-no-gutter(false, true);
+  }
+}
+
+
+// ==============
+// internals
+// ==============
+
+@mixin _gr-row-no-gutter($left: false, $right: false) {
+
+  @include _gr-no-gutter('margin', $left, $right);
+}
+
+@mixin _gr-col-no-gutter($left: false, $right: false) {
+
+  @include _gr-no-gutter('padding', $left, $right);
+}
+
+@mixin _gr-no-gutter($prop, $left: false, $right: false) {
+
+  @if not $left and not $right {
+
+    $left: true;
+    $right: true;
+  }
+
+  @if $left {
+
+    #{$prop}-left: 0;
+  }
+
+  @if $right {
+
+    #{$prop}-right: 0;
+  }
+}
+
+
+// ==============
+// public
+// ==============
+
+@mixin gr-no-gutter-row($breakpoint: null, $left: false, $right: false) {
+
+  @if $breakpoint and length($gr-breakpoints) > 0 {
+
+    @include _gr-media($breakpoint) {
+
+      @include _gr-row-no-gutter($left, $right);
+    }
+  } @else if not $breakpoint and length($gr-breakpoints) > 0 {
+
+    @each $breakpoint, $breakpoint-config in $gr-breakpoints {
+
+      @include _gr-media($breakpoint) {
+
+        @include _gr-row-no-gutter($left, $right);
+      }
+    }
+  } @else {
+
+    @include _gr-row-no-gutter($left, $right);
+  }
+}
+
+@mixin gr-no-gutter($breakpoint: null, $left: false, $right: false) {
+
+  @if $breakpoint and length($gr-breakpoints) > 0 {
+
+    @include _gr-media($breakpoint) {
+
+      @include _gr-col-no-gutter($left, $right);
+    }
+  } @else if not $breakpoint and length($gr-breakpoints) > 0 {
+
+    @each $breakpoint, $breakpoint-config in $gr-breakpoints {
+
+      @include _gr-media($breakpoint) {
+
+        @include _gr-col-no-gutter($left, $right);
+      }
+    }
+  } @else {
+
+    @include _gr-col-no-gutter($left, $right);
+  }
+}

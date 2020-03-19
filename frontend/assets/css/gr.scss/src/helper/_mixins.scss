@@ -1,0 +1,58 @@
+/// Builds the media query for the given breakpoint identifiers to wrap the styles in.
+/// @param  {String}          $start         The breakpoint identifier to get the maximum and/or minimum width from.
+/// @param  {String|Boolean}  $end    false  If given, the mixin uses the maximum value from this breakpoint.
+@mixin _gr-media($start, $end: false) {
+
+  $str: null;
+  $min: false;
+  $max: false;
+  $breakpoint-start: map-get($gr-breakpoints, $start);
+
+  @if $breakpoint-start {
+    @if $start and not $end {
+
+      $min: map-get($breakpoint-start, 'min');
+      $max: map-get($breakpoint-start, 'max');
+    } @else {
+
+      $breakpoint-end: map-get($gr-breakpoints, $end);
+      $min: map-get($breakpoint-start, 'min');
+      $max: map-get($breakpoint-end, 'max');
+    }
+  }
+
+  @if $max or $min {
+
+    @if $min and not $max {
+
+      $str: '(min-width: #{$min})';
+
+    } @else if $max and not $min {
+
+      $str: '(max-width: #{$max})';
+
+    } @else {
+
+      $str: '(min-width: #{$min}) and (max-width: #{$max})';
+    }
+  }
+
+  @if $str {
+
+    @media #{$str} {
+
+      @content;
+    }
+  } @else {
+
+    @content
+  }
+};
+
+@mixin gr-media($start, $end: false) {
+
+  @include _gr-media($start, $end) {
+
+    @content
+  }
+};

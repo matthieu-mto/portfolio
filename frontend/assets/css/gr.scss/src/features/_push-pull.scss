@@ -1,0 +1,176 @@
+
+// ==============
+// build classes
+// ==============
+
+@mixin _gr-build-modifier-push-pull-classes($columns, $set-push-classes: false, $set-pull-classes: false, $breakpoint: null) {
+
+  $push-selector: '.#{$gr-namespace-class}--push';
+  $pull-selector: '.#{$gr-namespace-class}--pull';
+
+  $push-pull-classes: ();
+
+  @if $breakpoint {
+
+    // seperate columns without breakpoint modifier
+    // to override them by column classes with modifier
+    @for $i from 0 to _gr-get-resp-val($breakpoint, columns) + 1 {
+
+      @if $set-push-classes {
+
+        $push-pull-classes: append($push-pull-classes, #{$push-selector}-#{$i}, 'comma');
+
+        #{$push-selector}-#{$i} {
+
+          @include _gr-push($i, _gr-get-resp-val($breakpoint, columns));
+        }
+      }
+
+      @if $set-pull-classes {
+
+        $push-pull-classes: append($push-pull-classes, #{$pull-selector}-#{$i}, 'comma');
+
+        #{$pull-selector}-#{$i} {
+
+          @include _gr-pull($i, _gr-get-resp-val($breakpoint, columns));
+        }
+      }
+    }
+
+    @for $i from 0 to _gr-get-resp-val($breakpoint, columns) + 1 {
+
+      @if $set-push-classes {
+
+        $push-pull-classes: append($push-pull-classes, #{$push-selector}-#{$i}#{$gr-breakpoint-class-divider}#{$breakpoint}, 'comma');
+
+        #{$push-selector}-#{$i}#{$gr-breakpoint-class-divider}#{$breakpoint} {
+
+          @include _gr-push($i, _gr-get-resp-val($breakpoint, columns));
+        }
+      }
+
+      @if $set-pull-classes {
+
+        $push-pull-classes: append($push-pull-classes, #{$pull-selector}-#{$i}#{$gr-breakpoint-class-divider}#{$breakpoint}, 'comma');
+
+        #{$pull-selector}-#{$i}#{$gr-breakpoint-class-divider}#{$breakpoint} {
+
+          @include _gr-pull($i, _gr-get-resp-val($breakpoint, columns));
+        }
+      }
+    }
+  } @else {
+
+    // seperate columns without breakpoint modifier
+    // to override them by column classes with modifier
+    @for $i from 0 to $gr-columns + 1 {
+
+      @if $set-push-classes {
+
+        $push-pull-classes: append($push-pull-classes, #{$push-selector}-#{$i}, 'comma');
+
+        #{$push-selector}-#{$i} {
+
+          @include _gr-push($i, $gr-columns);
+        }
+      }
+
+      @if $set-pull-classes {
+
+        $push-pull-classes: append($push-pull-classes, #{$pull-selector}-#{$i}, 'comma');
+
+        #{$pull-selector}-#{$i} {
+
+          @include _gr-pull($i, $gr-columns);
+        }
+      }
+    }
+  }
+
+  @if length($push-pull-classes) > 0 {
+
+    #{$push-pull-classes} {
+
+      @include _gr-push-pull-base;
+    }
+  }
+}
+
+
+// ==============
+// internals
+// ==============
+
+@mixin _gr-push($width, $columns) {
+
+  right: auto;
+  left: #{100% / $columns * $width};
+}
+
+@mixin _gr-pull($width, $columns) {
+
+  right: #{100% / $columns * $width};
+  left: auto;
+}
+
+@mixin _gr-push-pull-base {
+
+  position: relative;
+}
+
+
+// ==============
+// public
+// ==============
+
+@mixin gr-push($width, $breakpoint: null) {
+
+  @if $breakpoint and length($gr-breakpoints) > 0 {
+
+    @include _gr-media($breakpoint) {
+
+      @include _gr-push-pull-base;
+      @include _gr-push($width, _gr-get-resp-val($breakpoint, columns));
+    }
+  } @else if not $breakpoint and length($gr-breakpoints) > 0 {
+
+    @each $breakpoint, $breakpoint-config in $gr-breakpoints {
+
+      @include _gr-media($breakpoint) {
+
+        @include _gr-push-pull-base;
+        @include _gr-push($width, _gr-get-resp-val($breakpoint, columns));
+      }
+    }
+  } @else {
+
+    @include _gr-push-pull-base;
+    @include _gr-push($width, $gr-columns);
+  }
+}
+
+@mixin gr-pull($width, $breakpoint: null) {
+
+  @if $breakpoint and length($gr-breakpoints) > 0 {
+
+    @include _gr-media($breakpoint) {
+
+      @include _gr-push-pull-base;
+      @include _gr-pull($width, _gr-get-resp-val($breakpoint, columns));
+    }
+  } @else if not $breakpoint and length($gr-breakpoints) > 0 {
+
+    @each $breakpoint, $breakpoint-config in $gr-breakpoints {
+
+      @include _gr-media($breakpoint) {
+
+        @include _gr-push-pull-base;
+        @include _gr-pull($width, _gr-get-resp-val($breakpoint, columns));
+      }
+    }
+  } @else {
+
+    @include _gr-push-pull-base;
+    @include _gr-pull($width, $gr-columns);
+  }
+}

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>gr.scss</title>
+    <link rel="stylesheet" href="./styles/gr.css">
+
+    <style>
+
+      .row {
+
+      }
+
+      .gr-col,
+      .gr-inner {
+
+        background-color: rgba(152, 83, 147, 0.43);
+      }
+
+      .gr-inner {
+
+        margin: 8px 0;
+        border: 1px solid rgba(255, 44, 240, 0.84);
+        min-height: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gr-container">
+      <div class="gr-row">
+        <div class="gr-12">
+          <h2>generated classes</h2>
+        </div>
+      </div>
+      <div class="gr-row">
+        <div class="gr-12 gr-col">
+          <div class="gr-inner">
+            .gr-12
+          </div>
+        </div>
+        <div class="gr-6 gr-1@m gr-5@l gr-col">
+          <div class="gr-inner">
+            .gr-6 gr-1@m gr-3@l
+          </div>
+        </div>
+        <div class="gr-3@s gr-1@m gr-1@l gr-col">
+          <div class="gr-inner">
+            .gr-3@s gr-1@m gr-1@l
+          </div>
+        </div>
+        <div class="gr-2 gr-8@m gr-6@l gr-col">
+          <div class="gr-inner">
+            .gr-2 gr-8@m gr-6@l
+          </div>
+        </div>
+        <div class="gr-2 gr-1@s gr-12@l gr-col">
+          <div class="gr-inner">
+            .gr-2 gr-1@s gr-12@l
+          </div>
+        </div>
+      </div>
+
+      <div class="gr-row gr-row-no-gutter@m">
+        <div class="gr-4 gr-col gr-no-gutter@m gr-no-gutter--left@s">
+          <div class="gr-inner">
+            .gr-4
+          </div>
+        </div>
+        <div class="gr-4 gr-col gr-no-gutter@m">
+          <div class="gr-inner">
+            .gr-4
+          </div>
+        </div>
+        <div class="gr-4 gr-col gr-no-gutter@m gr-no-gutter--right@s">
+          <div class="gr-inner">
+            .gr-4
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="test-container">
+      <div class="test-row">
+        <div class="test-gr-12">
+          <h2>custom</h2>
+        </div>
+      </div>
+      <div class="test-row">
+        <div class="test-gr-12 gr-col">
+          <div class="gr-inner">
+            .gr-12
+          </div>
+        </div>
+        <div class="test-gr-6 test-gr-1@m test-gr-5@l gr-col">
+          <div class="gr-inner">
+            .gr-6 gr-1@m gr-3@l
+          </div>
+        </div>
+        <div class="test-gr-3@s test-gr-1@m test-gr-1@l gr-col">
+          <div class="gr-inner">
+            .gr-3@s gr-1@m gr-1@l
+          </div>
+        </div>
+        <div class="test-gr-2 test-gr-8@m test-gr-6@l gr-col">
+          <div class="gr-inner">
+            .gr-2 gr-8@m gr-6@l
+          </div>
+        </div>
+        <div class="test-gr-2 test-gr-1@s test-gr-12@l gr-col">
+          <div class="gr-inner">
+            .gr-2 gr-1@s gr-12@l
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gr-container">
+      <h2>grid:</h2>
+      <p>default 12 col</p>
+      <div class="gr-row">
+        <div class="gr-12 ">
+          <div class="gr-inner">
+            .gr-12
+          </div>
+        </div>
+      </div>
+      <div class="gr-row">
+        <div class="gr-11">
+          <div class="gr-inner">
+            .gr-11
+          </div>
+        </div>
+      </div>
+      <div class="gr-row">
+        <div class="gr-10">
+          <div class="gr-inner">
+            .gr-10
+          </div>
+        </div>
+      </div>
+      <div class="gr-row">
+        <div class="gr-9">
+          <div class="gr-inner">
+            .gr-9
+          </div>
+        </div>
+      </div>
+      <div class="gr-row">
+        <div class="gr-8">
+          <div class="gr-inner">
+            .gr-8
+          </div>
+        </div>
+      </div>
+      <div class="gr-row">
+        <div class="gr-7">
+          <div class="gr-inner">
+            .gr-7
+          </div>
+        </div>
+      </div>
+      <div class="gr-row">
+        <div class="gr-6">
+          <div class="gr-inner">
+            .gr-6
+          </div>
+        </div>
+      </div>
+      <div class="gr-row">
+        <div class="gr-5">
+          <div class="gr-inner">
+            .gr-5
+          </div>
+        </div>
+      </div>
+      <div class="gr-row">
+        <div class="gr-4">
+          <div class="gr-inner">
+            .gr-4
+          </div>
+        </div>
+      </div>
+      <div class="gr-row">
+        <div class="gr-3">
+          <div class="gr-inner">
+            .gr-3
+          </div>
+        </div>
+      </div>
+      <div class="gr-row">
+        <div class="gr-2">
+          <div class="gr-inner">
+            .gr-2
+          </div>
+        </div>
+      </div>
+      <div class="gr-row">
+        <div class="gr-1">
+          <div class="gr-inner">
+            .gr-1
+          </div>
+        </div>
+      </div>
+
+      <h2>no gutter</h2>
+      <div class="gr-row gr-row--no-gutter">
+        <div class="gr-12 gr--no-gutter">
+          <div class="gr-inner">
+            .gr-row.gr-row--now-gutter .gr-12.gr--no-gutter
+          </div>
+        </div>
+        <div class="gr-4 gr--no-gutter">
+          <div class="gr-inner">
+            .gr-4.gr--no-gutter
+          </div>
+        </div>
+        <div class="gr-4 gr--no-gutter">
+          <div class="gr-inner">
+            .gr-4.gr--no-gutter
+          </div>
+        </div>
+        <div class="gr-4 gr--no-gutter">
+          <div class="gr-inner">
+            .gr-4.gr--no-gutter
+          </div>
+        </div>
+      </div>
+
+      <h2>row reverse</h2>
+      <div class="gr-row gr-row--reverse">
+        <div class="gr-4">
+          <div class="gr-inner">
+            1. .gr-4
+          </div>
+        </div>
+        <div class="gr-4">
+          <div class="gr-inner">
+            2. .gr-4
+          </div>
+        </div>
+        <div class="gr-4">
+          <div class="gr-inner">
+            3. .gr-4
+          </div>
+        </div>
+      </div>
+
+      <h2>column</h2>
+      <div class="gr-row gr-row--column">
+        <div class="gr-4">
+          <div class="gr-inner">
+            1. .gr-4
+          </div>
+        </div>
+        <div class="gr-4">
+          <div class="gr-inner">
+            2. .gr-4
+          </div>
+        </div>
+        <div class="gr-4">
+          <div class="gr-inner">
+            3. .gr-4
+          </div>
+        </div>
+      </div>
+
+      <h2>column reverse</h2>
+      <div class="gr-row gr-row--column-reverse">
+        <div class="gr-4">
+          <div class="gr-inner">
+            1. .gr-4
+          </div>
+        </div>
+        <div class="gr-4">
+          <div class="gr-inner">
+            2. .gr-4
+          </div>
+        </div>
+        <div class="gr-4">
+          <div class="gr-inner">
+            3. .gr-4
+          </div>
+        </div>
+      </div>
+
+      <h2>full-width row</h2>
+      <div class="gr-row gr-row--full">
+        <div class="gr-4">
+          <div class="gr-inner">
+            .gr-4
+          </div>
+        </div>
+        <div class="gr-4">
+          <div class="gr-inner">
+            .gr-4
+          </div>
+        </div>
+        <div class="gr-4">
+          <div class="gr-inner">
+            .gr-4
+          </div>
+        </div>
+      </div>
+
+      <h2>full-width row no-gutter</h2>
+      <div class="gr-row gr-row--full gr-row--no-gutter">
+        <div class="gr-4 gr--no-gutter">
+          <div class="gr-inner">
+            .gr-4.gr--no-gutter
+          </div>
+        </div>
+        <div class="gr-4 gr--no-gutter">
+          <div class="gr-inner">
+            .gr-4.gr--no-gutter
+          </div>
+        </div>
+        <div class="gr-4 gr--no-gutter">
+          <div class="gr-inner">
+            .gr-4.gr--no-gutter
+          </div>
+        </div>
+      </div>
+
+      <h2>full-width row reverse</h2>
+      <div class="gr-row gr-row--reverse gr-row--full">
+        <div class="gr-4">
+          <div class="gr-inner">
+            1. .gr-4
+          </div>
+        </div>
+        <div class="gr-4">
+          <div class="gr-inner">
+            2. .gr-4
+          </div>
+        </div>
+        <div class="gr-4">
+          <div class="gr-inner">
+            3. .gr-4
+          </div>
+        </div>
+      </div>
+
+      <h2>pre- & suffix</h2>
+      <div class="gr-row">
+        <div class="gr-4 gr--prefix-3 gr--suffix-1 gr--prefix-4@m gr--suffix-0@m">
+          <div class="gr-inner">
+            .gr-4.gr--prefix-3.gr--suffix-1.gr--prefix-4.gr--suffix-0@m
+          </div>
+        </div>
+        <div class="gr-4">
+          <div class="gr-inner">
+            .gr-4
+          </div>
+        </div>
+        <div class="gr-4 gr--prefix-8 gr--prefix-4@m">
+          <div class="gr-inner">
+             .gr-4.gr--prefix-8.gr--prefix-4@m
+          </div>
+        </div>
+      </div>
+
+      <h2>push & pull</h2>
+      <div class="gr-row">
+        <div class="gr-4 gr--push-4">
+          <div class="gr-inner">
+            .gr-4.gr--push-4
+          </div>
+        </div>
+        <div class="gr-4 gr--pull-4">
+          <div class="gr-inner">
+            .gr-4.gr--pull-4
+          </div>
+        </div>
+        <div class="gr-4 gr--pull-2@m">
+          <div class="gr-inner">
+             .gr-4.gr--pull-2@m
+          </div>
+        </div>
+      </div>
+
+      <h2>order</h2>
+      <div class="gr-row">
+        <!-- 2. -->
+        <div class="gr-2 gr--order-2">
+          <div class="gr-inner">
+            <!-- Your content -->2.
+          </div>
+        </div>
+        <!-- 5. -->
+        <div class="gr-2 gr--order-5">
+          <div class="gr-inner">
+            <!-- Your content -->5.
+          </div>
+        </div>
+        <!-- 1. -->
+        <div class="gr-2 gr--order-first">
+          <div class="gr-inner">
+            <!-- Your content -->1.
+          </div>
+        </div>
+        <!-- 6. -->
+        <div class="gr-2 gr--order-last">
+          <div class="gr-inner">
+            <!-- Your content -->6.
+          </div>
+        </div>
+        <!-- 4. -->
+        <div class="gr-2 gr--order-4">
+          <div class="gr-inner">
+            <!-- Your content -->4.
+          </div>
+        </div>
+        <!-- 3. -->
+        <div class="gr-2 gr--order-3">
+          <div class="gr-inner">
+            <!-- Your content -->3.
+          </div>
+        </div>
+      </div>
+
+      <h2>push & pull</h2>
+      <div class="gr-row gr-row--align-between gr-row--align-bottom">
+        <div class="gr-2">
+          <div class="gr-inner">
+            .gr-4.gr--push-4
+          </div>
+        </div>
+        <div class="gr-2">
+          <div class="gr-inner">
+            .gr-4.gr--pull-4.gr-4.gr--pull-4.gr-4.gr--pull-4.gr-4.gr--pull-4.gr-4.gr--pull-4.gr-4.gr--pull-4.gr-4.gr--pull-4.gr-4.gr--pull-4.gr-4.gr--pull-4.gr-4.gr--pull-4.gr-4.gr--pull-4.gr-4.gr--pull-4.gr-4.gr--pull-4.gr-4.gr--pull-4.gr-4.gr--pull-4.gr-4.gr--pull-4.gr-4.gr--pull-4.gr-4.gr--pull-4.gr-4.gr--pull-4.gr-4.gr--pull-4.gr-4.gr--pull-4.gr-4.gr--pull-4.gr-4.gr--pull-4.gr-4.gr--pull-4
+          </div>
+        </div>
+        <div class="gr-2">
+          <div class="gr-inner">
+             .gr-4.gr--pull-2@m
+          </div>
+        </div>
+      </div>
+
+      <h2>no-gutter</h2>
+      <div class="gr-row gr-row--no-gutter">
+        <div class="gr-4 gr--no-gutter">
+          <div class="gr-inner">
+            .gr-4.gr--push-4
+          </div>
+        </div>
+        <div class="gr-4 gr--no-gutter">
+          <div class="gr-inner">
+            .gr-4.gr--pull-4
+          </div>
+        </div>
+        <div class="gr-4 gr--no-gutter">
+          <div class="gr-inner">
+              .gr-4.gr--pull-2@m
+          </div>
+        </div>
+      </div>
+
+      <div class="gr-row gr-row--no-gutter-left gr-row--no-gutter@l">
+        <div class="gr-4 gr--no-gutter-left gr--no-gutter-right@m gr--no-gutter-right@l">
+          <div class="gr-inner">
+            .gr-4.gr--push-4
+          </div>
+        </div>
+        <div class="gr-4 gr--no-gutter@m gr--no-gutter@l">
+          <div class="gr-inner">
+            .gr-4.gr--pull-4
+          </div>
+        </div>
+        <div class="gr-4 gr--no-gutter@l">
+          <div class="gr-inner">
+             .gr-4.gr--pull-2@m
+          </div>
+        </div>
+      </div>
+
+      <h2>hide show</h2>
+      <div class="gr-row">
+          <div class="gr-4 gr--hide gr--show@m">
+            <div class="gr-inner">
+              .gr-4.gr--hide.gr--show@m visible on m
+            </div>
+          </div>
+          <div class="gr-4 gr--hide gr--show@l">
+            <div class="gr-inner">
+              .gr-4.gr--hide.gr--show@l visible on l
+            </div>
+          </div>
+          <div class="gr-4 gr--hide@m gr--hide@l">
+            <div class="gr-inner">
+              .gr-4.gr--hide@m.gr--hide@l visible on s
+            </div>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>

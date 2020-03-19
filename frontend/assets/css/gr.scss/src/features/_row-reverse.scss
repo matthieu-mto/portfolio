@@ -1,0 +1,57 @@
+
+// ==============
+// build classes
+// ==============
+
+@mixin _gr-build-modifier-row-reverse-classes($breakpoint: null) {
+
+  $row-reverse-selector: '.#{$gr-namespace-class}-#{$gr-row-class}--reverse';
+
+  @if $breakpoint {
+
+    $row-reverse-selector: '#{$row-reverse-selector}, #{$row-reverse-selector}#{$gr-breakpoint-class-divider}#{$breakpoint}';
+  }
+
+  #{$row-reverse-selector} {
+
+    @include _gr-row-reverse($breakpoint);
+  }
+}
+
+
+// ==============
+// internals
+// ==============
+
+@mixin _gr-row-reverse($breakpoint: null) {
+
+  flex-direction: row-reverse;
+}
+
+
+// ==============
+// public
+// ==============
+
+@mixin gr-row-reverse($breakpoint: null) {
+
+  @if $breakpoint and length($gr-breakpoints) > 0 {
+
+    @include _gr-media($breakpoint) {
+
+      @include _gr-row-reverse();
+    }
+  } @else if not $breakpoint and length($gr-breakpoints) > 0 {
+
+    @each $breakpoint, $breakpoint-config in $gr-breakpoints {
+
+      @include _gr-media($breakpoint) {
+
+        @include _gr-row-reverse();
+      }
+    }
+  } @else {
+
+    @include _gr-row-reverse();
+  }
+}
