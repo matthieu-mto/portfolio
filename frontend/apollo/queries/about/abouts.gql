@@ -1,0 +1,6 @@
+query Abouts {
+  abouts {
+    id
+    content
+  }
+}
