@@ -1,9 +1,0 @@
-query Skills {
-  skills {
-    id
-    description
-    icon {
-      url
-    }
-  }
-}
