@@ -24,13 +24,6 @@ export default {
     ListElement,
     ProfilePicture
   },
-  props: {
-    text: {
-      type: String,
-      default: 'Default title',
-      required: true
-    }
-  },
   data() {
     return {}
   }
