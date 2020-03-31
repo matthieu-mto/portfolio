@@ -1,16 +1,14 @@
-@include gr-build-classes((
-  prefix: true,
-  suffix: false,
-  push: false,
-  pull: false,
-  row-full: true,
-  row-reverse: true,
-  hide-show: true,
-  order: false,
-  align: true,
-  no-gutter: true
-));
+// Configure grid
+$gr-breakpoints: $breakpoints;
 
-.gr-container {
-  margin: 0 auto;
-}
+$gr-set-container-style: true;
+$gr-center-container: true;
+
+$grid-features: (
+  prefix: true,
+  suffix: true,
+  hide-show: true,
+  order: true,
+  push: true,
+  row-full: true,
+);
