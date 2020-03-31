@@ -1,0 +1,43 @@
+<template>
+  <li class="element">
+    {{ text }}
+    <a v-if="link" :href="link">
+      {{ linkText }}
+    </a>
+  </li>
+</template>
+
+<script>
+export default {
+  components: {},
+  props: {
+    text: {
+      type: String,
+      default: 'Default description',
+      required: true
+    },
+    link: {
+      type: String,
+      default: null,
+      required: false
+    },
+    linkText: {
+      type: String,
+      default: 'Default text link',
+      required: false
+    }
+  },
+  data() {
+    return {}
+  }
+}
+</script>
+
+<style lang="scss">
+.element {
+  font-weight: $font-weight-medium;
+  font-size: $font-size-20;
+  line-height: 25px;
+  color: $primary;
+}
+</style>

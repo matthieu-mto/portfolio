@@ -1,0 +1,42 @@
+$breakpoints: (
+  xs: (
+    min: null,
+    max: 599px,
+    gutter: 14px,
+    columns: 12,
+    container: (
+      max-width: 100%,
+      padding: 20px
+    )
+  ),
+  s: (
+    min: 600px,
+    max: 999px,
+    gutter: 52px,
+    columns: 12,
+    container: (
+      max-width: 100%,
+      padding: 40px
+    )
+  ),
+  m: (
+    min: 1000px,
+    max: 1209px,
+    gutter: 52px,
+    columns: 12,
+    container: (
+      max-width: 100%,
+      padding: 60px
+    )
+  ),
+  l: (
+    min: 1210px,
+    max: null,
+    gutter: 72px,
+    columns: 12,
+    container: (
+      max-width: 1400px,
+      padding: 95px
+    )
+  )
+);

@@ -29,15 +29,9 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['uikit/dist/css/uikit.min.css', 'uikit/dist/css/uikit.css'],
+  css: ['@/assets/css/reset.css'],
   styleResources: {
-    scss: [
-      '@/assets/css/reset.css',
-      '@/assets/css/grid/breakpoints.scss',
-      '@/assets/css/gr.scss/_index.scss',
-      '@/assets/css/grid/config.scss',
-      '@/assets/css/theme.scss'
-    ]
+    scss: ['@/assets/scss/index.scss']
   },
   /*
    ** Plugins to load before mounting the App
@@ -56,13 +50,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/markdownit'],
-  markdownit: {
-    preset: 'default',
-    linkify: true,
-    breaks: true,
-    injected: true
-  },
+  modules: ['@nuxtjs/style-resources'],
   /*
    ** Build configuration
    */
