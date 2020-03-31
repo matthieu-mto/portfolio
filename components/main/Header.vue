@@ -17,7 +17,7 @@
 <script>
 import TitleBig from '@/components/titles/TitleBig.vue'
 import ListElement from '@/components/misc/ListElement.vue'
-import ProfilePicture from '@/components/images/Profilepicture.vue'
+import ProfilePicture from '@/components/images/ProfilePicture.vue'
 export default {
   components: {
     TitleBig,
