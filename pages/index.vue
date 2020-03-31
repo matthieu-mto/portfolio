@@ -1,6 +1,6 @@
 <template>
-  <div>
-    TEST
+  <div class="main">
+    <!-- HEADER -->
   </div>
 </template>
 
@@ -13,4 +13,10 @@ export default {
 }
 </script>
 
-<style></style>
+<style lang="scss">
+.main {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: $background;
+}
+</style>
