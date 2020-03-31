@@ -54,7 +54,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/markdownit'],
+  modules: ['@nuxtjs/style-resources', '@nuxtjs/markdownit'],
   markdownit: {
     preset: 'default',
     linkify: true,
