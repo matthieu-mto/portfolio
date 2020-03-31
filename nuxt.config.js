@@ -29,11 +29,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [
-    '@/assets/css/reset.css',
-    'uikit/dist/css/uikit.min.css',
-    'uikit/dist/css/uikit.css'
-  ],
+  css: ['@/assets/css/reset.css'],
   styleResources: {
     scss: ['@/assets/scss/index.scss']
   },
@@ -54,13 +50,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/style-resources', '@nuxtjs/markdownit'],
-  markdownit: {
-    preset: 'default',
-    linkify: true,
-    breaks: true,
-    injected: true
-  },
+  modules: ['@nuxtjs/style-resources'],
   /*
    ** Build configuration
    */

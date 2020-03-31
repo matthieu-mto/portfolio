@@ -1,5 +1,5 @@
 <template>
-  <h1 class="title__h1 gr-12">{{ text }}</h1>
+  <h1 class="title__h1">{{ text }}</h1>
 </template>
 
 <script>
@@ -18,4 +18,14 @@ export default {
 }
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.title {
+  &__h1 {
+    margin: $margin-50 0;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-25;
+    text-align: center;
+    color: $primary;
+  }
+}
+</style>
