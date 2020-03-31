@@ -4,13 +4,14 @@
 @import 'gr.scss/index';
 @import 'grid/grid';
 
-/* TYPOGRAPHY */
-@import 'typography/typography';
 
 /* VARIABLES */
 @import 'variables/colors';
 @import 'variables/margins';
 @import 'variables/typography';
+
+/* TYPOGRAPHY */
+@import 'typography/typography';
 
 /* MIXINS */
 @import 'mixins/media';
