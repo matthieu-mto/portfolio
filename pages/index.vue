@@ -1,12 +1,16 @@
 <template>
   <div class="main">
     <!-- HEADER -->
+    <Header />
   </div>
 </template>
 
 <script>
+import Header from '@/components/main/Header.vue'
 export default {
-  components: {},
+  components: {
+    Header
+  },
   data() {
     return {}
   }
