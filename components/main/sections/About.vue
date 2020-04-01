@@ -7,13 +7,13 @@
           <ListElement
             text="Student at "
             link="https://www.hetic.net/"
-            linkText="HETIC"
+            link-text="HETIC"
             class="element--margin element--small"
           />
           <ListElement
             text="Ex web engineer at "
             link="https://taikonauten.com/"
-            linkText="Taikonauten"
+            link-text="Taikonauten"
             class="element--margin element--small"
           />
           <ListElement
