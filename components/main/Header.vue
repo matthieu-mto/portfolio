@@ -32,6 +32,7 @@ export default {
 
 <style lang="scss">
 .header {
+  margin-bottom: $margin-50;
   &__description {
     margin: $margin-20 0;
     @include media(xs, s) {
