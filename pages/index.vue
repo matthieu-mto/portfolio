@@ -4,16 +4,19 @@
     <Header />
     <!-- SECTIONS -->
     <About />
+    <Skills />
   </div>
 </template>
 
 <script>
 import Header from '@/components/main/Header.vue'
 import About from '@/components/main/sections/About.vue'
+import Skills from '@/components/main/sections/Skills.vue'
 export default {
   components: {
     Header,
-    About
+    About,
+    Skills
   },
   data() {
     return {}
