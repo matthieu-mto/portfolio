@@ -2,14 +2,18 @@
   <div class="main">
     <!-- HEADER -->
     <Header />
+    <!-- SECTIONS -->
+    <About />
   </div>
 </template>
 
 <script>
 import Header from '@/components/main/Header.vue'
+import About from '@/components/main/sections/About.vue'
 export default {
   components: {
-    Header
+    Header,
+    About
   },
   data() {
     return {}
