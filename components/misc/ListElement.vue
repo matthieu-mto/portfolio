@@ -1,7 +1,7 @@
 <template>
   <li class="element">
     {{ text }}
-    <a v-if="link" :href="link">
+    <a v-if="link" :href="link" class="element__link">
       {{ linkText }}
     </a>
   </li>
@@ -39,5 +39,18 @@ export default {
   font-size: $font-size-20;
   line-height: 25px;
   color: $primary;
+  &__link {
+    color: inherit;
+    outline: none;
+  }
+  &--margin {
+    margin-bottom: $margin-15;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &--small {
+    font-size: $font-size-18;
+  }
 }
 </style>
