@@ -47,6 +47,7 @@ export default {
 <style lang="scss">
 .section {
   &__about {
+    margin-bottom: $margin-50;
     &--description {
       text-align: center;
     }
