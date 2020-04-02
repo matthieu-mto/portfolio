@@ -1,5 +1,5 @@
 <template>
-  <div :class="`skill skill--${slug} gr-2`">
+  <div :class="`skill skill--${slug} gr-2 gr-4@xs`">
     <img :src="`/medias/svg/${slug}.svg`" :alt="text" class="skill__img" />
     <p class="skill__name">{{ text }}</p>
   </div>
