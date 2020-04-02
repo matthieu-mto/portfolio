@@ -50,7 +50,7 @@ export default {
     }
   }
   &--small {
-    font-size: $font-size-18;
+    font-size: $font-size-16;
   }
 }
 </style>

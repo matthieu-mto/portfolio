@@ -21,7 +21,7 @@ export default {
 <style lang="scss">
 .title {
   &__h2 {
-    margin-bottom: $margin-20;
+    margin-bottom: $margin-15;
     font-weight: $font-weight-bold;
     font-size: $font-size-20;
     text-align: center;
