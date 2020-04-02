@@ -1,0 +1,15 @@
+// Configure grid
+$gr-breakpoints: $breakpoints;
+
+$gr-set-container-style: true;
+$gr-center-container: true;
+
+$grid-features: (
+  prefix: true,
+  suffix: true,
+  hide-show: true,
+  order: true,
+  push: true,
+  row-full: true,
+  align: true
+);

@@ -1,0 +1,141 @@
+
+// ==============
+// build classes
+// ==============
+
+@mixin _gr-build-modifier-prefix-suffix-classes($columns, $set-prefix-classes: false, $set-suffix-classes: false, $breakpoint: null) {
+
+  $prefix-selector: '.#{$gr-namespace-class}--prefix';
+  $suffix-selector: '.#{$gr-namespace-class}--suffix';
+
+  @if $breakpoint {
+
+    // seperate columns without breakpoint modifier
+    // to override them by column classes with modifier
+    @for $i from 0 to _gr-get-resp-val($breakpoint, columns) + 1 {
+
+      @if $set-prefix-classes {
+
+        #{$prefix-selector}-#{$i} {
+
+          @include _gr-prefix($i, _gr-get-resp-val($breakpoint, columns));
+        }
+      }
+
+      @if $set-suffix-classes {
+
+        #{$suffix-selector}-#{$i} {
+
+          @include _gr-suffix($i, _gr-get-resp-val($breakpoint, columns));
+        }
+      }
+    }
+
+    @for $i from 0 to _gr-get-resp-val($breakpoint, columns) + 1 {
+
+      @if $set-prefix-classes {
+
+        #{$prefix-selector}-#{$i}#{$gr-breakpoint-class-divider}#{$breakpoint} {
+
+          @include _gr-prefix($i, _gr-get-resp-val($breakpoint, columns));
+        }
+      }
+
+      @if $set-suffix-classes {
+
+        #{$suffix-selector}-#{$i}#{$gr-breakpoint-class-divider}#{$breakpoint} {
+
+          @include _gr-suffix($i, _gr-get-resp-val($breakpoint, columns));
+        }
+      }
+    }
+  } @else {
+
+    // seperate columns without breakpoint modifier
+    // to override them by column classes with modifier
+    @for $i from 0 to $gr-columns + 1 {
+
+      @if $set-prefix-classes {
+
+        #{$prefix-selector}-#{$i} {
+
+          @include _gr-prefix($i, $gr-columns);
+        }
+      }
+
+      @if $set-suffix-classes {
+
+        #{$suffix-selector}-#{$i} {
+
+          @include _gr-suffix($i, $gr-columns);
+        }
+      }
+    }
+  }
+}
+
+
+// ==============
+// internals
+// ==============
+
+@mixin _gr-prefix($width, $columns) {
+
+  margin-left: #{100% / $columns * $width};
+}
+
+@mixin _gr-suffix($width, $columns) {
+
+  margin-right: #{100% / $columns * $width};
+}
+
+
+// ==============
+// public
+// ==============
+
+@mixin gr-prefix($width, $breakpoint: null) {
+
+  @if $breakpoint and length($gr-breakpoints) > 0 {
+
+    @include _gr-media($breakpoint) {
+
+      @include _gr-prefix($width, _gr-get-resp-val($breakpoint, columns));
+    }
+  } @else if not $breakpoint and length($gr-breakpoints) > 0 {
+
+    @each $breakpoint, $breakpoint-config in $gr-breakpoints {
+
+      @include _gr-media($breakpoint) {
+
+        @include _gr-prefix($width, _gr-get-resp-val($breakpoint, columns));
+      }
+    }
+  } @else {
+
+    @include _gr-prefix($width, $gr-columns);
+  }
+}
+
+@mixin gr-suffix($width, $breakpoint: null) {
+
+  @if $breakpoint and length($gr-breakpoints) > 0 {
+
+    @include _gr-media($breakpoint) {
+
+      @include _gr-suffix($width, _gr-get-resp-val($breakpoint, columns));
+    }
+  } @else if not $breakpoint and length($gr-breakpoints) > 0 {
+
+    @each $breakpoint, $breakpoint-config in $gr-breakpoints {
+
+      @include _gr-media($breakpoint) {
+
+        @include _gr-suffix($width, _gr-get-resp-val($breakpoint, columns));
+      }
+    }
+  } @else {
+
+    @include _gr-suffix($width, $gr-columns);
+  }
+}

@@ -1,0 +1,188 @@
+
+$_gr-hide-show-types: (
+  hide: (
+    selector: '.#{$gr-namespace-class}--hide'
+  ),
+  show: (
+    selector: '.#{$gr-namespace-class}--show'
+  ),
+  hidden: (
+    selector: '.#{$gr-namespace-class}--hidden'
+  ),
+  visible: (
+    selector: '.#{$gr-namespace-class}--visible'
+  )
+);
+
+// ==============
+// build classes
+// ==============
+
+@mixin _gr-build-modifier-hide-show-classes($breakpoint: null) {
+
+  $_gr-hide-show-type-selectors: $_gr-hide-show-types;
+
+  @each $type, $selector-map in $_gr-hide-show-types {
+
+    $selector: map-get($selector-map, selector);
+
+    @if $breakpoint {
+
+      $selector: '#{$selector}, #{$selector}#{$gr-breakpoint-class-divider}#{$breakpoint}';
+    }
+
+    @if $type == hide {
+
+      #{$selector} {
+
+        @include _gr-hide($breakpoint);
+      }
+    }
+
+    @if $type == show {
+
+      #{$selector} {
+
+        @include _gr-show(', $breakpointblock');
+      }
+    }
+
+    @if $type == hidden {
+
+      #{$selector} {
+
+        @include _gr-hidden($breakpoint);
+      }
+    }
+
+    @if $type == visible {
+
+      #{$selector} {
+
+        @include _gr-visible($breakpoint);
+      }
+    }
+  }
+}
+
+
+// ==============
+// internals
+// ==============
+
+@mixin _gr-hide($breakpoint: null) {
+
+  display: none;
+}
+
+@mixin _gr-show($breakpoint: null, $disblay-type: 'block') {
+
+  display: #{$disblay-type};
+}
+
+@mixin _gr-hidden($breakpoint: null) {
+
+  visibility: hidden;
+}
+
+@mixin _gr-visible($breakpoint: null) {
+
+  visibility: visible;
+}
+
+
+// ==============
+// public
+// ==============
+
+@mixin gr-hide($breakpoint: null) {
+
+  @if $breakpoint and length($gr-breakpoints) > 0 {
+
+    @include _gr-media($breakpoint) {
+
+      @include _gr-hide($breakpoint);
+    }
+  } @else if not $breakpoint and length($gr-breakpoints) > 0 {
+
+    @each $breakpoint, $breakpoint-config in $gr-breakpoints {
+
+      @include _gr-media($breakpoint) {
+
+        @include _gr-hide($breakpoint);
+      }
+    }
+  } @else {
+
+    @include _gr-hide($breakpoint);
+  }
+}
+
+@mixin gr-show($breakpoint: null, $disblay-type: 'block') {
+
+  @if $breakpoint and length($gr-breakpoints) > 0 {
+
+    @include _gr-media($breakpoint) {
+
+      @include _gr-show($breakpoint, $disblay-type);
+    }
+  } @else if not $breakpoint and length($gr-breakpoints) > 0 {
+
+    @each $breakpoint, $breakpoint-config in $gr-breakpoints {
+
+      @include _gr-media($breakpoint) {
+
+        @include _gr-show($breakpoint, $disblay-type);
+      }
+    }
+  } @else {
+
+    @include _gr-show($breakpoint, $disblay-type);
+  }
+}
+
+@mixin gr-hidden($breakpoint: null) {
+
+  @if $breakpoint and length($gr-breakpoints) > 0 {
+
+    @include _gr-media($breakpoint) {
+
+      @include _gr-hidden($breakpoint);
+    }
+  } @else if not $breakpoint and length($gr-breakpoints) > 0 {
+
+    @each $breakpoint, $breakpoint-config in $gr-breakpoints {
+
+      @include _gr-media($breakpoint) {
+
+        @include _gr-hidden($breakpoint);
+      }
+    }
+  } @else {
+
+    @include _gr-hidden($breakpoint);
+  }
+}
+
+@mixin gr-visible($breakpoint: null) {
+
+  @if $breakpoint and length($gr-breakpoints) > 0 {
+
+    @include _gr-media($breakpoint) {
+
+      @include _gr-visible($breakpoint);
+    }
+  } @else if not $breakpoint and length($gr-breakpoints) > 0 {
+
+    @each $breakpoint, $breakpoint-config in $gr-breakpoints {
+
+      @include _gr-media($breakpoint) {
+
+        @include _gr-visible($breakpoint);
+      }
+    }
+  } @else {
+
+    @include _gr-visible($breakpoint);
+  }
+}

@@ -1,0 +1,70 @@
+
+// ==============
+// build classes
+// ==============
+
+@mixin _gr-build-modifier-order-classes($columns, $breakpoint: null) {
+
+  $order-list: first, last;
+
+  @for $i from 1 to $columns + 1 {
+
+    $order-list: append($order-list, $i);
+  }
+
+  @each $position in $order-list {
+
+    $order-selector: '.#{$gr-namespace-class}--order-#{$position}';
+
+    @if $breakpoint {
+
+      $order-selector: '#{$order-selector}, #{$order-selector}#{$gr-breakpoint-class-divider}#{$breakpoint}';
+    }
+
+    #{$order-selector} {
+
+      @include _gr-order($position);
+    }
+  }
+}
+
+
+// ==============
+// internals
+// ==============
+
+@mixin _gr-order($position) {
+
+  $position: if($position == 'first', -1, $position);
+  $position: if($position == 'last', 9999, $position);
+
+  order: $position;
+}
+
+
+// ==============
+// public
+// ==============
+
+@mixin gr-order($position, $breakpoint: null) {
+
+  @if $breakpoint and length($gr-breakpoints) > 0 {
+
+    @include _gr-media($breakpoint) {
+
+      @include _gr-order($position);
+    }
+  } @else if not $breakpoint and length($gr-breakpoints) > 0 {
+
+    @each $breakpoint, $breakpoint-config in $gr-breakpoints {
+
+      @include _gr-media($breakpoint) {
+
+        @include _gr-order($position);
+      }
+    }
+  } @else {
+
+    @include _gr-order($position);
+  }
+}
