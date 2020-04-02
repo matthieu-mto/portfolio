@@ -5,6 +5,7 @@
     <!-- SECTIONS -->
     <About />
     <Skills />
+    <Socials />
   </div>
 </template>
 
@@ -12,11 +13,13 @@
 import Header from '@/components/main/Header.vue'
 import About from '@/components/main/sections/About.vue'
 import Skills from '@/components/main/sections/Skills.vue'
+import Socials from '@/components/main/sections/Socials.vue'
 export default {
   components: {
     Header,
     About,
-    Skills
+    Skills,
+    Socials
   },
   data() {
     return {}
@@ -26,9 +29,8 @@ export default {
 
 <style lang="scss">
 .main {
-  min-width: 100vw;
-  min-height: 100vh;
   background-color: $background;
+  padding-bottom: $margin-50;
   * {
     font-family: $font-office;
   }
