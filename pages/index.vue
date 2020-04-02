@@ -26,9 +26,8 @@ export default {
 
 <style lang="scss">
 .main {
-  min-width: 100vw;
-  min-height: 100vh;
   background-color: $background;
+  padding-bottom: $margin-50;
   * {
     font-family: $font-office;
   }
