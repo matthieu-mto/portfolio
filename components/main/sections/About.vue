@@ -48,6 +48,9 @@ export default {
 .section {
   &__about {
     margin-bottom: $margin-50;
+    @include media(xs, m) {
+      margin-bottom: $margin-30;
+    }
     &--description {
       text-align: center;
     }

@@ -53,6 +53,9 @@ export default {
 .section {
   &__socials {
     margin-bottom: $margin-50;
+    @include media(xs, m) {
+      margin-bottom: $margin-30;
+    }
   }
 }
 </style>

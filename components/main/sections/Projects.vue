@@ -98,6 +98,9 @@ export default {
 .section {
   &__projects {
     margin-bottom: $margin-50;
+    @include media(xs, m) {
+      margin-bottom: $margin-30;
+    }
   }
 }
 </style>
