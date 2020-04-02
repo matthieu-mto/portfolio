@@ -1,5 +1,5 @@
 <template>
-  <div :class="`social social--${slug} gr-2`">
+  <div :class="`social social--${slug} gr-2 gr-4@xs`">
     <a :href="link" class="social__link" target="_blank">
       <img :src="`/medias/svg/${slug}.svg`" :alt="text" class="social__img" />
       <p class="social__name">{{ text }}</p>
