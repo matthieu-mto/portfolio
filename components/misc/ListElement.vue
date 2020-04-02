@@ -44,7 +44,7 @@ export default {
     outline: none;
   }
   &--margin {
-    margin-bottom: $margin-15;
+    margin-bottom: $margin-10;
     &:last-child {
       margin-bottom: 0;
     }
