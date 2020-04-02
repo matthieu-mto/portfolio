@@ -39,6 +39,9 @@ export default {
   font-size: $font-size-20;
   line-height: 25px;
   color: $primary;
+  @include media(s, m) {
+    font-size: $font-size-25;
+  }
   &__link {
     color: inherit;
     outline: none;
@@ -51,6 +54,9 @@ export default {
   }
   &--small {
     font-size: $font-size-16;
+    @include media(s, m) {
+      font-size: $font-size-20;
+    }
   }
 }
 </style>

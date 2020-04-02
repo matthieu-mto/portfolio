@@ -26,6 +26,9 @@ export default {
     font-size: $font-size-20;
     text-align: center;
     color: $primary;
+    @include media(xs, m) {
+      font-size: $font-size-25;
+    }
   }
 }
 </style>
