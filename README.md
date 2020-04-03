@@ -1,22 +1,8 @@
-# Portfolio
+# Matthieu TOUSSAINT - Portfolio 💻
 
-> Portfolio v3
-
-## Build Setup
-
-```bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+#### Where find this protfolio ?
+You can follow [this link](https://matthieutoussaint.fr) !
+    
+##### Want contact ?
+Ask me on [Twitter](http://twitter.com/matthieu__tou) or add me to your [LinkedIn network](https://www.linkedin.com/in/matthieu-toussaint/).
+Reviews will be really apreciated ! 🤓
