@@ -46,10 +46,7 @@ export default {
     // Doc: https://github.com/nuxt-community/stylelint-module
     '@nuxtjs/stylelint-module',
     '@nuxtjs/dotenv',
-    '@nuxtjs/google-analytics',
-    {
-      id: 'UA-162795664-1'
-    }
+    ['@nuxtjs/google-analytics', { id: 'UA-162795664-1' }]
   ],
   /*
    ** Nuxt.js modules
