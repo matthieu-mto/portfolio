@@ -36,7 +36,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '~/plugins/uikit.js', ssr: false }],
+  plugins: ['@/plugins/vue-lazyload'],
   /*
    ** Nuxt.js dev-modules
    */

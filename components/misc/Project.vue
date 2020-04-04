@@ -5,7 +5,7 @@
     <a :href="projectLink" class="project__link" target="_blank">discover</a>
     <div class="project__img-container">
       <img
-        :src="`/medias/previews/${slug}.png`"
+        v-lazy="`/medias/previews/${slug}.png`"
         :alt="projectTitle"
         class="project__img"
       />
@@ -90,6 +90,7 @@ export default {
     margin-top: $margin-10;
     margin-bottom: $margin-20;
     overflow: hidden;
+    text-align: center;
 
     @include media(s, m) {
       height: 340px;
@@ -98,6 +99,11 @@ export default {
   &__img {
     width: 100%;
     height: auto;
+    &[lazy='loading'],
+    &[lazy='error'] {
+      width: 50px;
+      height: 50px;
+    }
   }
   &__description {
     font-size: $font-size-15;
