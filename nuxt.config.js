@@ -45,8 +45,12 @@ export default {
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
     '@nuxtjs/stylelint-module',
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    '@nuxtjs/gtm'
   ],
+  gtm: {
+    id: 'GTM-KB8GNTT'
+  },
   /*
    ** Nuxt.js modules
    */
