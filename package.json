@@ -21,7 +21,6 @@
     }
   },
   "dependencies": {
-    "@nuxtjs/gtm": "^2.2.3",
     "@nuxtjs/markdownit": "^1.2.9",
     "@nuxtjs/style-resources": "^1.0.0",
     "graphql": "^14.6.0",
@@ -35,6 +34,7 @@
     "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/eslint-config": "^2.0.0",
     "@nuxtjs/eslint-module": "^1.0.0",
+    "@nuxtjs/google-analytics": "^2.2.3",
     "@nuxtjs/stylelint-module": "^3.1.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^6.1.0",

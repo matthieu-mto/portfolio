@@ -46,11 +46,11 @@ export default {
     // Doc: https://github.com/nuxt-community/stylelint-module
     '@nuxtjs/stylelint-module',
     '@nuxtjs/dotenv',
-    '@nuxtjs/gtm'
+    '@nuxtjs/google-analytics',
+    {
+      id: 'UA-162795664-1'
+    }
   ],
-  gtm: {
-    id: 'GTM-KB8GNTT'
-  },
   /*
    ** Nuxt.js modules
    */
