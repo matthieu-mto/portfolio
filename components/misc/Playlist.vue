@@ -1,5 +1,5 @@
 <template>
-  <div class="playlist gr-4">
+  <div class="playlist gr-4@l gr-6@m gr-12">
     <iframe
       :src="url"
       width="300"
@@ -23,4 +23,9 @@ export default {
 }
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.playlist {
+  margin-bottom: $margin-30;
+  text-align: center;
+}
+</style>

@@ -86,13 +86,17 @@ export default {
   }
   &__img-container {
     width: 100%;
-    height: 270px;
+    height: 260px;
     margin-top: $margin-10;
     margin-bottom: $margin-20;
     overflow: hidden;
     text-align: center;
 
-    @include media(s, m) {
+    @include media(xs) {
+      height: 220px;
+    }
+
+    @include media(m, l) {
       height: 340px;
     }
   }
