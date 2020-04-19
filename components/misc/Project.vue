@@ -92,7 +92,10 @@ export default {
     overflow: hidden;
     text-align: center;
 
-    @include media(s, m) {
+    @include media(s) {
+      height: 260px;
+    }
+    @include media(m, l) {
       height: 340px;
     }
   }
