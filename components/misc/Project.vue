@@ -96,8 +96,12 @@ export default {
       height: 220px;
     }
 
-    @include media(m, l) {
+    @include media(m) {
       height: 340px;
+    }
+
+    @include media(l) {
+      height: 270px;
     }
   }
   &__img {
