@@ -11,6 +11,12 @@
             class="element--margin element--small"
           />
           <ListElement
+            text="Full stack web engineer at "
+            link="https://vendredi.cc/"
+            link-text="Vendredi"
+            class="element--margin element--small"
+          />
+          <ListElement
             text="Ex web engineer at "
             link="https://taikonauten.com/"
             link-text="Taikonauten"
