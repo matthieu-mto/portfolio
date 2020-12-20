@@ -4,7 +4,7 @@
       <div class="gr-row gr-row--align-center">
         <TitleBig text="Matthieu TOUSSAINT - Web Developer" class="gr-12" />
         <ul class="header__description gr-12@xs gr-12@s">
-          <ListElement text="4th year student @ HETIC" />
+          <ListElement text="5th year student @ HETIC" />
           <ListElement text="Full stack web developer" />
           <ListElement text="Freelance consultant" />
         </ul>
