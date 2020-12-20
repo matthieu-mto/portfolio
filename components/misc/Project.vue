@@ -1,16 +1,32 @@
 <template>
-  <div :class="`project project--${slug} gr-6 gr-12@xs gr-10@s gr-10@m`">
-    <h3 class="project__title">{{ projectTitle }}</h3>
-    <h4 class="project__date">{{ projectDate }}</h4>
-    <a :href="projectLink" class="project__link" target="_blank">discover</a>
+  <div
+    :class="`project project--${project.slug} gr-6 gr-12@xs gr-10@s gr-10@m`"
+  >
+    <h3 class="project__title">{{ project.title }}</h3>
+    <h4 class="project__date">{{ project.date }}</h4>
+    <a
+      v-if="project.link"
+      :href="project.link"
+      class="project__link"
+      target="_blank"
+    >
+      discover
+    </a>
+    <div v-else class="project__link">
+      <span class="striked">discover</span>
+      <span class="small">not online anymore</span>
+    </div>
     <div class="project__img-container">
       <img
-        v-lazy="`/medias/previews/${slug}.png`"
-        :alt="projectTitle"
+        ref="projectImg"
+        v-lazy="`/medias/previews/${project.slug}.png`"
+        :alt="project.title"
         class="project__img"
+        :class="{ 'project__img-fullscreen': fullscreen }"
+        @click="toggleFullscreen"
       />
     </div>
-    <p class="project__description">{{ projectDescription }}</p>
+    <p class="project__description">{{ project.description }}</p>
   </div>
 </template>
 
@@ -18,30 +34,23 @@
 export default {
   components: {},
   props: {
-    slug: {
-      type: String,
-      default: 'slug-default',
+    project: {
+      type: Object,
       required: true
-    },
-    projectTitle: {
-      type: String,
-      default: 'Default title',
-      required: true
-    },
-    projectDate: {
-      type: String,
-      default: 'Default date',
-      required: true
-    },
-    projectLink: {
-      type: String,
-      default: '/',
-      required: true
-    },
-    projectDescription: {
-      type: String,
-      default: 'Default description',
-      required: true
+    }
+  },
+  data() {
+    return {
+      fullscreen: false
+    }
+  },
+  methods: {
+    toggleFullscreen() {
+      this.fullscreen = !this.fullscreen
+
+      if (this.fullscreen) {
+        this.$refs.projectImg.requestFullscreen()
+      }
     }
   }
 }
@@ -111,6 +120,15 @@ export default {
     &[lazy='error'] {
       width: 50px;
       height: 50px;
+    }
+    &:hover {
+      cursor: pointer;
+      opacity: 0.6;
+    }
+
+    &-fullscreen {
+      cursor: default !important;
+      opacity: 1 !important;
     }
   }
   &__description {
