@@ -1,11 +1,20 @@
+.striked {
+  text-decoration: line-through;
+}
+
+.small {
+  font-size: $font-size-15;
+  font-weight: $font-weight-light;
+}
+
 /**********
 * REGULAR *
 **********/
 @font-face {
   font-family: 'Office-code-pro';
   src: url('/fonts/OfficeCodePro-Light.woff') format('woff'),
-       url('/fonts/OfficeCodePro-Light.ttf') format('truetype'),
-       url('/fonts/OfficeCodePro-Light.svg#OfficeCodePro-Light') format('svg');
+    url('/fonts/OfficeCodePro-Light.ttf') format('truetype'),
+    url('/fonts/OfficeCodePro-Light.svg#OfficeCodePro-Light') format('svg');
   font-weight: $font-weight-light;
   font-style: normal;
 }
@@ -13,8 +22,8 @@
 @font-face {
   font-family: 'Office-code-pro';
   src: url('/fonts/OfficeCodePro-Regular.woff') format('woff'),
-       url('/fonts/OfficeCodePro-Regular.ttf') format('truetype'),
-       url('/fonts/OfficeCodePro-Regular.svg#OfficeCodePro-Regular') format('svg');
+    url('/fonts/OfficeCodePro-Regular.ttf') format('truetype'),
+    url('/fonts/OfficeCodePro-Regular.svg#OfficeCodePro-Regular') format('svg');
   font-weight: $font-weight-regular;
   font-style: normal;
 }
@@ -22,8 +31,8 @@
 @font-face {
   font-family: 'Office-code-pro';
   src: url('/fonts/OfficeCodePro-Medium.woff') format('woff'),
-       url('/fonts/OfficeCodePro-Medium.ttf') format('truetype'),
-       url('/fonts/OfficeCodePro-Medium.svg#OfficeCodePro-Medium') format('svg');
+    url('/fonts/OfficeCodePro-Medium.ttf') format('truetype'),
+    url('/fonts/OfficeCodePro-Medium.svg#OfficeCodePro-Medium') format('svg');
   font-weight: $font-weight-medium;
   font-style: normal;
 }
@@ -31,13 +40,11 @@
 @font-face {
   font-family: 'Office-code-pro';
   src: url('/fonts/OfficeCodePro-Bold.woff') format('woff'),
-       url('/fonts/OfficeCodePro-Bold.ttf') format('truetype'),
-       url('/fonts/OfficeCodePro-Bold.svg#OfficeCodePro-Bold') format('svg');
+    url('/fonts/OfficeCodePro-Bold.ttf') format('truetype'),
+    url('/fonts/OfficeCodePro-Bold.svg#OfficeCodePro-Bold') format('svg');
   font-weight: $font-weight-bold;
   font-style: normal;
 }
-
-
 
 /*********
 * ITALIC *
@@ -45,8 +52,9 @@
 @font-face {
   font-family: 'Office-code-pro';
   src: url('/fonts/OfficeCodePro-LightItalic.woff') format('woff'),
-       url('/fonts/OfficeCodePro-LightItalic.ttf') format('truetype'),
-       url('/fonts/OfficeCodePro-LightItalic.svg#OfficeCodePro-LightItalic') format('svg');
+    url('/fonts/OfficeCodePro-LightItalic.ttf') format('truetype'),
+    url('/fonts/OfficeCodePro-LightItalic.svg#OfficeCodePro-LightItalic')
+      format('svg');
   font-weight: $font-weight-light;
   font-style: italic;
 }
@@ -54,8 +62,9 @@
 @font-face {
   font-family: 'Office-code-pro';
   src: url('/fonts/OfficeCodePro-RegularItalic.woff') format('woff'),
-       url('/fonts/OfficeCodePro-RegularItalic.ttf') format('truetype'),
-       url('/fonts/OfficeCodePro-RegularItalic.svg#OfficeCodePro-RegularItalic') format('svg');
+    url('/fonts/OfficeCodePro-RegularItalic.ttf') format('truetype'),
+    url('/fonts/OfficeCodePro-RegularItalic.svg#OfficeCodePro-RegularItalic')
+      format('svg');
   font-weight: $font-weight-regular;
   font-style: italic;
 }
@@ -63,8 +72,9 @@
 @font-face {
   font-family: 'Office-code-pro';
   src: url('/fonts/OfficeCodePro-MediumItalic.woff') format('woff'),
-       url('/fonts/OfficeCodePro-MediumItalic.ttf') format('truetype'),
-       url('/fonts/OfficeCodePro-MediumItalic.svg#OfficeCodePro-MediumItalic') format('svg');
+    url('/fonts/OfficeCodePro-MediumItalic.ttf') format('truetype'),
+    url('/fonts/OfficeCodePro-MediumItalic.svg#OfficeCodePro-MediumItalic')
+      format('svg');
   font-weight: $font-weight-medium;
   font-style: italic;
 }
@@ -72,9 +82,9 @@
 @font-face {
   font-family: 'Office-code-pro';
   src: url('/fonts/OfficeCodePro-BoldItalic.woff') format('woff'),
-       url('/fonts/OfficeCodePro-BoldItalic.ttf') format('truetype'),
-       url('/fonts/OfficeCodePro-BoldItalic.svg#OfficeCodePro-BoldItalic') format('svg');
+    url('/fonts/OfficeCodePro-BoldItalic.ttf') format('truetype'),
+    url('/fonts/OfficeCodePro-BoldItalic.svg#OfficeCodePro-BoldItalic')
+      format('svg');
   font-weight: $font-weight-bold;
   font-style: italic;
 }
-
