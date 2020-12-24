@@ -13,17 +13,14 @@ export default {
   props: {
     slug: {
       type: String,
-      default: 'slug-default',
       required: true
     },
     text: {
       type: String,
-      default: 'Default text',
       required: true
     },
     link: {
       type: String,
-      default: 'https://matthieutoussaint.fr',
       required: true
     }
   }

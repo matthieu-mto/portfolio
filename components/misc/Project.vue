@@ -10,11 +10,11 @@
       class="project__link"
       target="_blank"
     >
-      discover
+      {{ $t('components.misc.project.discover') }}
     </a>
     <div v-else class="project__link">
-      <span class="striked">discover</span>
-      <span class="small">not online anymore</span>
+      <span class="striked">{{ $t('components.misc.project.discover') }}</span>
+      <span class="small">{{ $t('components.misc.project.offline') }}</span>
     </div>
     <div class="project__img-container">
       <img
@@ -22,7 +22,7 @@
         v-lazy="`/medias/previews/${project.slug}.png`"
         :alt="project.title"
         class="project__img"
-        :class="{ 'project__img-fullscreen': fullscreen }"
+        :class="{ 'project__img-fullscreen': isFullscreen }"
         @click="toggleFullscreen"
       />
     </div>
@@ -41,14 +41,14 @@ export default {
   },
   data() {
     return {
-      fullscreen: false
+      isFullscreen: false
     }
   },
   methods: {
     toggleFullscreen() {
-      this.fullscreen = !this.fullscreen
+      this.isFullscreen = !this.isFullscreen
 
-      if (this.fullscreen) {
+      if (this.isFullscreen) {
         this.$refs.projectImg.requestFullscreen()
       }
     }
@@ -61,6 +61,11 @@ export default {
   margin: $margin-30 0;
   text-align: left;
   color: $primary;
+
+  @include media(xs) {
+    margin: $margin-15 0;
+  }
+
   &__title {
     font-size: $font-size-20;
     font-weight: $font-weight-medium;
@@ -102,6 +107,10 @@ export default {
     text-align: center;
 
     @include media(xs) {
+      height: 170px;
+    }
+
+    @include media(s) {
       height: 220px;
     }
 
@@ -121,9 +130,12 @@ export default {
       width: 50px;
       height: 50px;
     }
-    &:hover {
-      cursor: pointer;
-      opacity: 0.6;
+
+    @include media(m, l) {
+      &:hover {
+        cursor: pointer;
+        opacity: 0.6;
+      }
     }
 
     &-fullscreen {
@@ -133,7 +145,7 @@ export default {
   }
   &__description {
     font-size: $font-size-15;
-    line-height: $font-size-18;
+    line-height: 1.1;
     font-weight: $font-weight-light;
 
     @include media(s, m) {

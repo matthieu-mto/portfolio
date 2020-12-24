@@ -8,7 +8,6 @@ export default {
   props: {
     text: {
       type: String,
-      default: 'Default title',
       required: true
     }
   },
@@ -26,6 +25,11 @@ export default {
     font-size: $font-size-25;
     text-align: center;
     color: $primary;
+
+    @include media(xs, s) {
+      margin-top: $margin-90;
+      margin-bottom: $margin-20;
+    }
   }
 }
 </style>
