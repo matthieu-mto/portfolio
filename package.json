@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Portfolio v3",
   "author": "Matthieu TOUSSAINT",
+  "license": "UNLICENSED",
   "private": true,
   "scripts": {
     "dev": "nuxt",

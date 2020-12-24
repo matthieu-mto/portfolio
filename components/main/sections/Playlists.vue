@@ -1,18 +1,11 @@
 <template>
-  <div class="section section__music">
+  <div class="section section__playlists">
     <div class="gr-container">
       <div class="gr-row gr-row--align-center">
-        <TitleSection text="current playlists" class="gr-12" />
-        <!-- <iframe
-          v-for="(url, index) in playlistsUrls"
-          :key="index"
-          :src="url"
-          width="300"
-          height="380"
-          frameborder="0"
-          allowtransparency="true"
-          allow="encrypted-media"
-        ></iframe> -->
+        <TitleSection
+          :text="$t('components.main.sections.playlists.currentPlaylists')"
+          class="gr-12"
+        />
         <Playlist
           v-for="(url, index) in playlistsUrls"
           :key="index"
@@ -44,7 +37,7 @@ export default {
 
 <style lang="scss">
 .section {
-  &__music {
+  &__playlists {
     margin-bottom: $margin-50;
     @include media(xs, m) {
       margin-bottom: $margin-30;

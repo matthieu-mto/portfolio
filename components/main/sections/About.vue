@@ -2,32 +2,35 @@
   <div class="section section__about">
     <div class="gr-container">
       <div class="gr-row gr-row--align-center">
-        <TitleSection text="about" class="gr-12" />
+        <TitleSection
+          :text="$t('components.main.sections.about.title')"
+          class="gr-12"
+        />
         <ul class="section__about--description gr-12">
           <ListElement
-            text="Student at "
+            :text="$t('components.main.sections.about.studentAt')"
             link="https://www.hetic.net/"
             link-text="HETIC"
             class="element--margin element--small"
           />
           <ListElement
-            text="Full stack web engineer at "
+            :text="$t('components.main.sections.about.job')"
             link="https://vendredi.cc/"
             link-text="Vendredi"
             class="element--margin element--small"
           />
           <ListElement
-            text="Ex web engineer at "
+            :text="$t('components.main.sections.about.oldJob')"
             link="https://taikonauten.com/"
             link-text="Taikonauten"
             class="element--margin element--small"
           />
           <ListElement
-            text="Technology enthusiastic"
+            :text="$t('components.main.sections.about.hobby')"
             class="element--margin element--small"
           />
           <ListElement
-            text="Freelance consultant"
+            :text="$t('components.main.sections.about.freelance')"
             class="element--margin element--small"
           />
         </ul>
