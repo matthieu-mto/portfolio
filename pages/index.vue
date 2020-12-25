@@ -1,7 +1,7 @@
 <template>
   <div class="main-container">
     <!-- BURGER MENU -->
-    <BurgerMenu />
+    <Burger />
     <!-- HEADER -->
     <Header
       :title="$t('pages.index.header.title')"
@@ -19,7 +19,7 @@
 
 <script>
 import About from '@/components/main/sections/About.vue'
-import BurgerMenu from '@/components/misc/BurgerMenu'
+import Burger from '@/components/misc/Burger'
 import Header from '@/components/main/Header.vue'
 import Playlists from '@/components/main/sections/Playlists.vue'
 import Projects from '@/components/main/sections/Projects.vue'
@@ -31,7 +31,7 @@ export default {
   name: 'index',
   components: {
     About,
-    BurgerMenu,
+    Burger,
     Header,
     Playlists,
     Projects,

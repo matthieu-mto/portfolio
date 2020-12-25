@@ -27,8 +27,7 @@ export default {
     color: $primary;
 
     @include media(xs, s) {
-      margin-top: $margin-90;
-      margin-bottom: $margin-20;
+      margin: $margin-20 0;
     }
   }
 }

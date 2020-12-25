@@ -1,7 +1,6 @@
 import i18n from './config/i18n'
 
 export default {
-  target: 'static',
   /*
    ** Headers of the page
    */
@@ -42,10 +41,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [
-    { src: '@/plugins/burger-menu', ssr: false },
-    '@/plugins/vue-lazyload'
-  ],
+  plugins: ['@/plugins/vue-lazyload'],
   /*
    ** Nuxt.js dev-modules
    */

@@ -10,8 +10,9 @@
 }
 
 a {
-  color: inherit;
-  outline: none;
+  color: inherit !important;
+  outline: none !important;
+  text-decoration: none;
 }
 
 .link {

@@ -1,7 +1,7 @@
 <template>
   <div class="main-container">
     <!-- BURGER MENU -->
-    <BurgerMenu />
+    <Burger />
 
     <Header :title="$t('pages.contact.title')" />
 
@@ -44,14 +44,14 @@
 </template>
 
 <script>
-import BurgerMenu from '@/components/misc/BurgerMenu'
+import Burger from '@/components/misc/Burger'
 import Header from '@/components/main/Header.vue'
 
 export default {
   // eslint-disable-next-line
   name: 'contact',
   components: {
-    BurgerMenu,
+    Burger,
     Header
   }
 }
