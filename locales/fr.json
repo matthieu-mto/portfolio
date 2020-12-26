@@ -1,0 +1,87 @@
+{
+  "components": {
+    "main": {
+      "sections": {
+        "about": {
+          "freelance": "Consultant freelance",
+          "hobby": "Techno-enthousiaste",
+          "job": "Développeur web full stack à ",
+          "oldJob": "Ex web développeur à ",
+          "studentAt": "Étudiant à",
+          "title": "à propos"
+        },
+        "playlists": {
+          "currentPlaylists": "mes playlists du moment"
+        },
+        "projects": {
+          "ecologia": {
+            "date": "Octobre 2018",
+            "description": "Pour un projet scolaire, nous avons du créer un thème Wordpress sur le sujet de l'écologie."
+          },
+          "graduationVideo": {
+            "date": "Juin 2018",
+            "description": "J'ai eu l'opportunité de travailler avec l'ancien directeur de HETIC (Jean-Christophe BEAUX) afin de réaliser et monter la vidéo de la Remise des Diplômes de la promotion 2017 de HETIC.",
+            "titre": "Réalisation d'une vidéo pour une Remise des Diplômes de HETIC"
+          },
+          "hypatos": {
+            "date": "Août 2019",
+            "description": "Durant mon stage à Taikonauten, j'ai réalisé le développement du nouveau site d'Hypatos."
+          },
+          "supertrash": {
+            "date": "Février 2020",
+            "description": "Pour ce projet de design, nous avons créé en équipe un site dédié à l'événement Supertrash. \"Vous voulez être aidé dans la gestion de vos déchets sur votre festival ? Supertrash vous offre la possibilité d'avoir un design pour votre containers à ordure placés sur le lieu de votre festival\""
+          },
+          "title": "projets",
+          "vendredi": {
+            "date": "Depuis mai 2020",
+            "description": "Depuis mai 2020, je fais partie de la grande aventure \"Vendredi\". Je travaille dans l'entreprise en tant que développeur full stack afin d'aider à améliorer la plateforme de l'engagement !"
+          },
+          "weisserRing": {
+            "date": "Octobre 2019",
+            "description": "Durant mon stage à Taikonauten, j'ai travaillé sur une animation de Noël pour Weisser Ring. Cette animation peut ne pas apparaître s'il n'est pas encore l'heure de Noël ❄️",
+            "title": "Weisser Ring - Animation de Noël"
+          },
+          "wizer": {
+            "date": "Octobre 2018",
+            "description": "Pour un project scolaire, nous avons du créer un produit en rapport avec la lecture. Nous avons décider de réfléchir à une application qui facilite le stockage de données d'un article. J'ai développé un mini-site pour présenter ce projet d'application.",
+            "title": "Mini site pour une application"
+          }
+        }
+      }
+    },
+    "misc": {
+      "burgerMenu": {
+        "contact": "📬 Contact",
+        "home": "🏠 Accueil",
+        "switchLanguage": "Switch to"
+      },
+      "project": {
+        "discover": "découvrir",
+        "offline": "le projet n'est plus en ligne"
+      }
+    }
+  },
+  "pages": {
+    "contact": {
+      "form": {
+        "button": {
+          "send": "Envoyer"
+        },
+        "placeholder": {
+          "email": "E-mail",
+          "message": "Message",
+          "name": "Nom"
+        }
+      },
+      "title": "contact"
+    },
+    "index": {
+      "header": {
+        "freelance": "Consultant freelance",
+        "job": "Développeur web full stack",
+        "student": "Étudiant de 5ème année @ HETIC",
+        "title": "Matthieu TOUSSAINT - Développeur web"
+      }
+    }
+  }
+}

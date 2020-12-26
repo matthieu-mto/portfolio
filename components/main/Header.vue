@@ -2,13 +2,15 @@
   <div class="header">
     <div class="gr-container">
       <div class="gr-row gr-row--align-center">
-        <TitleBig text="Matthieu TOUSSAINT - Web Developer" class="gr-12" />
+        <TitleBig :text="title" class="gr-12" />
         <ul class="header__description gr-12@xs gr-12@s">
-          <ListElement text="5th year student @ HETIC" />
-          <ListElement text="Full stack web developer" />
-          <ListElement text="Freelance consultant" />
+          <ListElement
+            v-for="(element, index) in elements"
+            :key="index"
+            :text="element"
+          />
         </ul>
-        <ProfilePicture class="gr-12" />
+        <ProfilePicture v-if="showProfilePicture" class="gr-12" />
       </div>
     </div>
   </div>
@@ -23,6 +25,23 @@ export default {
     TitleBig,
     ListElement,
     ProfilePicture
+  },
+  props: {
+    elements: {
+      type: Array,
+      required: false,
+      default: () => {
+        return []
+      }
+    },
+    title: {
+      type: String,
+      required: true
+    },
+    showProfilePicture: {
+      type: Boolean,
+      default: false
+    }
   },
   data() {
     return {}
