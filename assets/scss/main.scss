@@ -1,0 +1,21 @@
+.main-container {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: $background;
+  color: $primary;
+  padding-bottom: $margin-50;
+  * {
+    font-family: $font-office;
+  }
+}
+
+a {
+  color: inherit !important;
+  outline: none !important;
+}
+
+.link {
+  &__exact-active {
+    text-decoration: underline !important;
+  }
+}

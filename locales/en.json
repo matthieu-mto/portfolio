@@ -1,0 +1,87 @@
+{
+  "components": {
+    "main": {
+      "sections": {
+        "about": {
+          "freelance": "Freelance consultant",
+          "hobby": "Technology enthusiastic",
+          "job": "Full stack web developer at ",
+          "oldJob": "Ex web developer at ",
+          "studentAt": "Student at",
+          "title": "about"
+        },
+        "playlists": {
+          "currentPlaylists": "current playlists"
+        },
+        "projects": {
+          "ecologia": {
+            "date": "October 2018",
+            "description": "For a school project, we had to create a wordpress theme about ecology."
+          },
+          "graduationVideo": {
+            "date": "June 2018",
+            "description": "I had the opportunity to work with the ex-director of HETIC (Jean-Christophe BEAUX) to create and edit the graduation video for the 2017's promotion of HETIC.",
+            "titre": "Video realisation for HETIC graduation"
+          },
+          "hypatos": {
+            "date": "August 2019",
+            "description": "During my internship at Taikonauten, I made the development of the new website of Hypatos."
+          },
+          "supertrash": {
+            "date": "February 2020",
+            "description": "For this generative design project, we have created a site dedicated to Supertrash's event service. Do you want to be helped in the processing of your waste for your festival? Supertrash will offer you a unique design for your trash cans that will be placed in the festival."
+          },
+          "title": "projets",
+          "vendredi": {
+            "date": "Since May 2020",
+            "description": "Since 2020, I'm part of the great adventure \"Vendredi\". I work as a full stack web developer to improve the engagment plateform!"
+          },
+          "weisserRing": {
+            "date": "October 2019",
+            "description": "During my internship at Taikonauten, I worked on a winter animation for Weisser Ring. This animation may not appear if it's not winter time ❄️",
+            "title": "Weisser Ring - Winter animation"
+          },
+          "wizer": {
+            "date": "October 2018",
+            "description": "We had to create a product for a school projet about reading. We decided to think about an app which facilitate the storing the data of an article. I developed a mini-site to present this application project.",
+            "title": "Mini site for an app"
+          }
+        }
+      }
+    },
+    "misc": {
+      "burgerMenu": {
+        "contact": "📬 Contact",
+        "home": "🏠 Home",
+        "switchLanguage": "Changer vers le"
+      },
+      "project": {
+        "discover": "discover",
+        "offline": "not online anymore"
+      }
+    }
+  },
+  "pages": {
+    "contact": {
+      "form": {
+        "button": {
+          "send": "Send"
+        },
+        "placeholder": {
+          "email": "Email",
+          "message": "Message",
+          "name": "Name"
+        }
+      },
+      "title": "contact"
+    },
+    "index": {
+      "header": {
+        "freelance": "Freelance Consultant",
+        "job": "Full stack web developer",
+        "student": "5th year student @ HETIC",
+        "title": "Matthieu TOUSSAINT - Web Developer"
+      }
+    }
+  }
+}

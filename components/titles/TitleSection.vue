@@ -8,7 +8,6 @@ export default {
   props: {
     text: {
       type: String,
-      default: 'Default title h2',
       required: true
     }
   },
