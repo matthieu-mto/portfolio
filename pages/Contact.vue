@@ -14,7 +14,7 @@
         netlify-honeypot="bot-field"
         data-netlify="true"
       >
-        <p class="hidden">
+        <p class="gr--hide">
           <label>
             Don’t fill this out if you’re human:
             <input name="bot-field" />
