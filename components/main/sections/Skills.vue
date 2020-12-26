@@ -25,11 +25,8 @@ import Skill from '@/components/misc/Skill.vue'
 export default {
   components: {
     TitleSection,
-    Skill
+    Skill,
   },
-  data() {
-    return {}
-  }
 }
 </script>
 

@@ -3,5 +3,5 @@ import fr from '../locales/fr.json'
 export default {
   fallbackLocale: 'en',
   locale: 'en',
-  messages: { en, fr }
+  messages: { en, fr },
 }

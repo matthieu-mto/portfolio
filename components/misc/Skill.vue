@@ -12,14 +12,14 @@ export default {
     slug: {
       type: String,
       default: 'slug-default',
-      required: true
+      required: true,
     },
     text: {
       type: String,
       default: 'Default text',
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 }
 </script>
 

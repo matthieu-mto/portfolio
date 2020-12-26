@@ -14,22 +14,22 @@ export default {
     text: {
       type: String,
       default: 'Default description',
-      required: true
+      required: true,
     },
     link: {
       type: String,
       default: null,
-      required: false
+      required: false,
     },
     linkText: {
       type: String,
       default: 'Default text link',
-      required: false
-    }
+      required: false,
+    },
   },
   data() {
     return {}
-  }
+  },
 }
 </script>
 

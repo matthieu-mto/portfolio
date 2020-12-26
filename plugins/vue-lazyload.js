@@ -8,5 +8,5 @@ Vue.use(VueLazyload, {
   preLoad: 1,
   error: problem,
   loading: loader,
-  attempt: 3
+  attempt: 3,
 })

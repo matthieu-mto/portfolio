@@ -24,7 +24,7 @@ export default {
   components: {
     TitleBig,
     ListElement,
-    ProfilePicture
+    ProfilePicture,
   },
   props: {
     elements: {
@@ -32,20 +32,17 @@ export default {
       required: false,
       default: () => {
         return []
-      }
+      },
     },
     title: {
       type: String,
-      required: true
+      required: true,
     },
     showProfilePicture: {
       type: Boolean,
-      default: false
-    }
+      default: false,
+    },
   },
-  data() {
-    return {}
-  }
 }
 </script>
 

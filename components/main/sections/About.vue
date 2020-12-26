@@ -45,11 +45,8 @@ import ListElement from '@/components/misc/ListElement.vue'
 export default {
   components: {
     TitleSection,
-    ListElement
+    ListElement,
   },
-  data() {
-    return {}
-  }
 }
 </script>
 

@@ -13,17 +13,17 @@ export default {
   props: {
     slug: {
       type: String,
-      required: true
+      required: true,
     },
     text: {
       type: String,
-      required: true
+      required: true,
     },
     link: {
       type: String,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 }
 </script>
 

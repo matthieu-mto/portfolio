@@ -24,7 +24,7 @@ import Project from '@/components/misc/Project.vue'
 export default {
   components: {
     TitleSection,
-    Project
+    Project,
   },
   data() {
     return {
@@ -36,7 +36,7 @@ export default {
           link: 'https://app.vendredi.cc',
           description: this.$t(
             'components.main.sections.projects.vendredi.description'
-          )
+          ),
         },
         {
           slug: 'supertrash',
@@ -45,7 +45,7 @@ export default {
           link: 'https://gitlab.com/mattmlz-school/supertrash',
           description: this.$t(
             'components.main.sections.projects.supertrash.description'
-          )
+          ),
         },
         {
           slug: 'weisser-ring',
@@ -54,7 +54,7 @@ export default {
           link: 'https://spenden.weisser-ring.de/',
           description: this.$t(
             'components.main.sections.projects.weisserRing.description'
-          )
+          ),
         },
         {
           slug: 'hypatos',
@@ -63,7 +63,7 @@ export default {
           link: 'https://hypatos.ai/',
           description: this.$t(
             'components.main.sections.projects.hypatos.description'
-          )
+          ),
         },
         {
           slug: 'ecologia',
@@ -71,7 +71,7 @@ export default {
           date: this.$t('components.main.sections.projects.ecologia.date'),
           description: this.$t(
             'components.main.sections.projects.ecologia.description'
-          )
+          ),
         },
         {
           slug: 'wizer',
@@ -79,7 +79,7 @@ export default {
           date: this.$t('components.main.sections.projects.wizer.date'),
           description: this.$t(
             'components.main.sections.projects.wizer.description'
-          )
+          ),
         },
         {
           slug: 'graduation-video',
@@ -92,11 +92,11 @@ export default {
           link: 'https://vimeo.com/278643634',
           description: this.$t(
             'components.main.sections.projects.graduationVideo.titre'
-          )
-        }
-      ]
+          ),
+        },
+      ],
     }
-  }
+  },
 }
 </script>
 

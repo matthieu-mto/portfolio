@@ -22,16 +22,16 @@ import Playlist from '@/components/misc/Playlist.vue'
 export default {
   components: {
     TitleSection,
-    Playlist
+    Playlist,
   },
   data() {
     return {
       playlistsUrls: [
         'https://open.spotify.com/embed/playlist/2z3KX0uApohGtGlDPQS5XI',
-        'https://open.spotify.com/embed/playlist/4SnWbzt0GwOeBI3lYiUrhr'
-      ]
+        'https://open.spotify.com/embed/playlist/4SnWbzt0GwOeBI3lYiUrhr',
+      ],
     }
-  }
+  },
 }
 </script>
 

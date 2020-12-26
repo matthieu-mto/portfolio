@@ -11,7 +11,15 @@
         name="contact"
         method="POST"
         netlify
+        netlify-honeypot="bot-field"
+        data-netlify="true"
       >
+        <p class="gr--hide">
+          <label>
+            Don’t fill this out if you’re human:
+            <input name="bot-field" />
+          </label>
+        </p>
         <input
           class="form__input gr-6 gr--prefix-1 gr-12@xs gr-12@xs gr--prefix-0@xs gr--prefix-0@s"
           name="name"
@@ -52,8 +60,8 @@ export default {
   name: 'contact',
   components: {
     Burger,
-    Header
-  }
+    Header,
+  },
 }
 </script>
 
