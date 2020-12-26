@@ -12,11 +12,10 @@
 a {
   color: inherit !important;
   outline: none !important;
-  text-decoration: none;
 }
 
 .link {
   &__exact-active {
-    text-decoration: underline;
+    text-decoration: underline !important;
   }
 }

@@ -107,6 +107,7 @@ export default {
       margin-bottom: $margin-15;
       color: inherit;
       outline: none;
+      text-decoration: none;
     }
   }
 }
