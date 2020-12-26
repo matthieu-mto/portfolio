@@ -41,11 +41,8 @@ import Social from '@/components/misc/Social.vue'
 export default {
   components: {
     TitleSection,
-    Social
+    Social,
   },
-  data() {
-    return {}
-  }
 }
 </script>
 

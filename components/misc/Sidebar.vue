@@ -41,20 +41,19 @@ export default {
   props: {
     isPanelOpen: {
       type: Boolean,
-      default: false
-    }
+      default: false,
+    },
   },
   computed: {
     availableLocales() {
       return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale)
-    }
+    },
   },
   methods: {
     closeSidebarPanel() {
-      this.isPanelOpen = false
       this.$emit('close')
-    }
-  }
+    },
+  },
 }
 </script>
 

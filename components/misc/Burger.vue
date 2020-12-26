@@ -23,18 +23,18 @@ import Sidebar from './Sidebar'
 
 export default {
   components: {
-    Sidebar
+    Sidebar,
   },
   data() {
     return {
-      isBurgerActive: false
+      isBurgerActive: false,
     }
   },
   methods: {
     toggle() {
       this.isBurgerActive = !this.isBurgerActive
-    }
-  }
+    },
+  },
 }
 </script>
 

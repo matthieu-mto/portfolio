@@ -12,20 +12,20 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Matthieu TOUSSAINT | Fullstack web developer - Portfolio'
-      }
+        content: 'Matthieu TOUSSAINT | Fullstack web developer - Portfolio',
+      },
     ],
     link: [
       {
         rel: 'icon',
         type: 'image/x-icon',
-        href: '/favicon.ico'
-      }
-    ]
+        href: '/favicon.ico',
+      },
+    ],
   },
   router: {
     linkActiveClass: 'link__active',
-    linkExactActiveClass: 'link__exact-active'
+    linkExactActiveClass: 'link__exact-active',
   },
   /*
    ** Customize the progress-bar color
@@ -36,7 +36,7 @@ export default {
    */
   css: ['@/assets/css/reset.css'],
   styleResources: {
-    scss: ['@/assets/scss/index.scss']
+    scss: ['@/assets/scss/index.scss'],
   },
   /*
    ** Plugins to load before mounting the App
@@ -60,22 +60,22 @@ export default {
           {
             code: 'en',
             iso: 'en-US',
-            name: 'English 🇬🇧'
+            name: 'English 🇬🇧',
           },
           {
             code: 'fr',
             iso: 'fr-FR',
-            name: 'Français 🇫🇷'
-          }
+            name: 'Français 🇫🇷',
+          },
         ],
         detectBrowserLanguage: {
           useCookie: true,
           cookieKey: 'i18n_redirected',
-          onlyOnRoot: true
+          onlyOnRoot: true,
         },
-        vueI18n: i18n
-      }
-    ]
+        vueI18n: i18n,
+      },
+    ],
   ],
   /*
    ** Nuxt.js modules
@@ -88,6 +88,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
-  }
+    extend(config, ctx) {},
+  },
 }

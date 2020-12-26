@@ -36,12 +36,12 @@ export default {
   props: {
     project: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
   },
   data() {
     return {
-      isFullscreen: false
+      isFullscreen: false,
     }
   },
   methods: {
@@ -51,8 +51,8 @@ export default {
       if (this.isFullscreen) {
         this.$refs.projectImg.requestFullscreen()
       }
-    }
-  }
+    },
+  },
 }
 </script>
 
