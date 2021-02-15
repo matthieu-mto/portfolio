@@ -11,11 +11,6 @@
           link="https://github.com/mattmlz/"
         />
         <Social
-          text="Gitlab"
-          slug="gitlab"
-          link="https://gitlab.com/matt_mlz"
-        />
-        <Social
           text="Twitter"
           slug="twitter"
           link="https://twitter.com/matthieu__tou"
