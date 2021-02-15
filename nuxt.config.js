@@ -13,7 +13,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Matthieu TOUSSAINT | Fullstack web developer - Portfolio',
+        content: 'Matthieu TOUSSAINT | Fullstack web developer',
       },
     ],
     link: [
@@ -43,9 +43,6 @@ export default {
    ** Plugins to load before mounting the App
    */
   plugins: ['@/plugins/vue-lazyload'],
-  /*
-   ** Nuxt.js dev-modules
-   */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
@@ -78,9 +75,6 @@ export default {
       },
     ],
   ],
-  /*
-   ** Nuxt.js modules
-   */
   modules: ['@nuxtjs/style-resources'],
   /*
    ** Build configuration
