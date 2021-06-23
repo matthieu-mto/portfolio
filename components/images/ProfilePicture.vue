@@ -1,7 +1,7 @@
 <template>
   <div class="profile-picture">
     <img
-      src="~/static/medias/profile-picture-round.png"
+      src="~/static/medias/profile-picture.jpg"
       alt="Profile picture"
       class="profile-picture__img"
     />
@@ -14,6 +14,8 @@
   text-align: center;
   &__img {
     filter: $black-white;
+    width: 200px;
+    border-radius: 50%;
   }
 }
 </style>

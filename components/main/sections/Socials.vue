@@ -6,24 +6,11 @@
       </div>
       <div class="gr-row gr-row--align-center">
         <Social
-          text="Github"
-          slug="github"
-          link="https://github.com/mattmlz/"
-        />
-        <Social
-          text="Twitter"
-          slug="twitter"
-          link="https://twitter.com/matthieu__tou"
-        />
-        <Social
-          text="LinkedIn"
-          slug="linkedin"
-          link="https://www.linkedin.com/in/matthieu-toussaint/"
-        />
-        <Social
-          text="Mail"
-          slug="mail"
-          link="mailto:matthieu@matthieutoussaint.fr"
+          v-for="(social, index) in socials"
+          :key="index"
+          :link="social.link"
+          :slug="social.slug"
+          :text="social.text"
         />
       </div>
     </div>
@@ -37,6 +24,32 @@ export default {
   components: {
     TitleSection,
     Social,
+  },
+  computed: {
+    socials() {
+      return [
+        {
+          link: 'https://github.com/matthieu-mto',
+          slug: 'github',
+          text: 'Github',
+        },
+        {
+          link: 'https://twitter.com/matthieu__tou',
+          slug: 'twitter',
+          text: 'Twitter',
+        },
+        {
+          link: 'https://www.linkedin.com/in/matthieu-toussaint/',
+          slug: 'linkedin',
+          text: 'LinkedIn',
+        },
+        {
+          link: 'mailto:matthieu@matthieutoussaint.fr',
+          slug: 'mail',
+          text: 'Mail',
+        },
+      ]
+    },
   },
 }
 </script>
