@@ -44,7 +44,7 @@ export default {
           text: 'LinkedIn',
         },
         {
-          link: 'mailto:matthieu@matthieutoussaint.fr',
+          link: '/contact',
           slug: 'mail',
           text: 'Mail',
         },

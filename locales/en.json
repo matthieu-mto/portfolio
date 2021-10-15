@@ -14,10 +14,6 @@
           "currentPlaylists": "current playlists"
         },
         "projects": {
-          "ecologia": {
-            "date": "October 2018",
-            "description": "For a school project, we had to create a wordpress theme about ecology."
-          },
           "graduationVideo": {
             "date": "June 2018",
             "description": "I had the opportunity to work with the ex-director of HETIC (Jean-Christophe BEAUX) to create and edit the graduation video for the 2017's promotion of HETIC.",
@@ -27,9 +23,10 @@
             "date": "August 2019",
             "description": "During my internship at Taikonauten, I made the development of the new website of Hypatos."
           },
-          "supertrash": {
-            "date": "February 2020",
-            "description": "For this generative design project, we have created a site dedicated to Supertrash's event service. Do you want to be helped in the processing of your waste for your festival? Supertrash will offer you a unique design for your trash cans that will be placed in the festival."
+          "sesam": {
+            "date": "From january to june 2021",
+            "description": "With a team of 6 students from HETIC, we developed an entrepreneurship project based on recruitment during 6 months.",
+            "title": "Sesam"
           },
           "title": "projets",
           "vendredi": {

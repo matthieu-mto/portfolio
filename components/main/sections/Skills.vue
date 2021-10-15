@@ -5,15 +5,13 @@
         <TitleSection text="skills" class="gr-12" />
       </div>
       <div class="gr-row gr-row--align-center">
-        <Skill text="HTML 5" slug="html5" />
-        <Skill text="CSS3" slug="css3" />
         <Skill text="JS ES6" slug="js" />
         <Skill text="VueJS" slug="vuejs" />
         <Skill text="PHP" slug="php" />
-        <Skill text="MySQL" slug="mysql" />
-        <Skill text="NodeJS" slug="nodejs" />
+        <Skill text="Laravel" slug="laravel" />
+        <Skill text="PostgreSQL" slug="postgresql" />
         <Skill text="Git" slug="git" />
-        <Skill text="Swift" slug="swift" />
+        <Skill text="Heroku" slug="heroku" />
       </div>
     </div>
   </div>

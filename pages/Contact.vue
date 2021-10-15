@@ -6,47 +6,13 @@
     <Header :title="$t('pages.contact.title')" />
 
     <div class="gr-container">
-      <form
-        class="form gr-row gr-row--align-center"
-        name="contact"
-        method="POST"
-        netlify
-        netlify-honeypot="bot-field"
-        data-netlify="true"
-      >
-        <p class="gr--hide">
-          <label>
-            Don’t fill this out if you’re human:
-            <input name="bot-field" />
-          </label>
-        </p>
-        <input
-          class="form__input gr-6 gr--prefix-1 gr-12@xs gr-12@xs gr--prefix-0@xs gr--prefix-0@s"
-          name="name"
-          :placeholder="$t('pages.contact.form.placeholder.name')"
-          type="text"
-          required
-        />
-        <input
-          class="form__input gr-6 gr--prefix-1 gr-12@xs gr-12@xs gr--prefix-0@xs gr--prefix-0@s"
-          name="email"
-          :placeholder="$t('pages.contact.form.placeholder.email')"
-          type="email"
-          required
-        />
-        <textarea
-          class="form__textarea gr-6 gr--prefix-1 gr-12@xs gr-12@xs gr--prefix-0@xs gr--prefix-0@s"
-          name="message"
-          rows="4"
-          :placeholder="$t('pages.contact.form.placeholder.message')"
-        />
-        <button
-          class="form__button gr-6 gr--prefix-1 gr-12@xs gr-12@xs gr--prefix-0@xs gr--prefix-0@s"
-          type="submit"
-        >
-          {{ $t('pages.contact.form.button.send') }}
-        </button>
-      </form>
+      <div
+        data-tf-widget="l9tK1vOz"
+        data-tf-hide-footer
+        data-tf-hide-headers
+        class="gr-12 form-typeform"
+      ></div>
+      <script src="//embed.typeform.com/next/embed.js"></script>
     </div>
   </div>
 </template>
@@ -66,40 +32,7 @@ export default {
 </script>
 
 <style lang="scss">
-.form {
-  & > * {
-    font-family: $font-office;
-    color: $secondary;
-  }
-
-  &__input {
-    margin-bottom: $margin-20;
-    padding: $margin-10;
-  }
-
-  &__textarea {
-    margin-bottom: $margin-20;
-    padding: $margin-10;
-  }
-
-  &__input,
-  &__textarea,
-  &__button {
-    border: solid 1px $primary;
-  }
-
-  &__button {
-    height: 50px;
-    text-transform: uppercase;
-    cursor: pointer;
-    background-color: none;
-    transition: all 0.5s ease-in-out;
-
-    &:hover {
-      font-weight: $font-weight-bold;
-      color: $background;
-      background-color: $secondary;
-    }
-  }
+.form-typeform {
+  height: 500px;
 }
 </style>
