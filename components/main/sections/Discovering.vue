@@ -2,18 +2,13 @@
   <div class="section section__skills">
     <div class="gr-container">
       <div class="gr-row gr-row--align-center">
-        <TitleSection text="skills" class="gr-12" />
+        <TitleSection text="discovering" class="gr-12" />
       </div>
       <div class="gr-row gr-row--align-center">
-        <Skill text="JS ES6" slug="js" />
-        <Skill text="VueJS" slug="vuejs" />
-        <Skill text="NuxtJS" slug="nuxtjs" />
-        <Skill text="Typescript" slug="typescript" />
-        <Skill text="PHP" slug="php" />
-        <Skill text="Laravel" slug="laravel" />
-        <Skill text="PostgreSQL" slug="postgresql" />
-        <Skill text="Git" slug="git" />
-        <Skill text="Heroku" slug="heroku" />
+        <Skill text="AWS" slug="aws" />
+        <Skill text="Cloudflare" slug="cloudflare" />
+        <Skill text="Webflow" slug="webflow" />
+        <Skill text="ReactJs" slug="reactjs" />
       </div>
     </div>
   </div>

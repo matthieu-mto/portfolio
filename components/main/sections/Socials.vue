@@ -30,7 +30,7 @@ export default {
       return [
         {
           link: 'https://github.com/matthieu-mto',
-          slug: 'github',
+          slug: 'git',
           text: 'Github',
         },
         {
@@ -46,7 +46,7 @@ export default {
         {
           link: '/contact',
           slug: 'mail',
-          text: 'Mail',
+          text: 'Contact',
         },
       ]
     },
