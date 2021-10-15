@@ -11,6 +11,7 @@
     <!-- SECTIONS -->
     <About />
     <Skills />
+    <Discovering />
     <Socials />
     <Projects />
     <Playlists />
@@ -21,6 +22,7 @@
 import About from '@/components/main/sections/About.vue'
 import Burger from '@/components/misc/Burger'
 import Header from '@/components/main/Header.vue'
+import Discovering from '@/components/main/sections/Discovering.vue'
 import Playlists from '@/components/main/sections/Playlists.vue'
 import Projects from '@/components/main/sections/Projects.vue'
 import Skills from '@/components/main/sections/Skills.vue'
@@ -32,6 +34,7 @@ export default {
   components: {
     About,
     Burger,
+    Discovering,
     Header,
     Playlists,
     Projects,

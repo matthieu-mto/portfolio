@@ -14,10 +14,6 @@
           "currentPlaylists": "mes playlists du moment"
         },
         "projects": {
-          "ecologia": {
-            "date": "Octobre 2018",
-            "description": "Pour un projet scolaire, nous avons du créer un thème Wordpress sur le sujet de l'écologie."
-          },
           "graduationVideo": {
             "date": "Juin 2018",
             "description": "J'ai eu l'opportunité de travailler avec l'ancien directeur de HETIC (Jean-Christophe BEAUX) afin de réaliser et monter la vidéo de la Remise des Diplômes de la promotion 2017 de HETIC.",
@@ -27,9 +23,10 @@
             "date": "Août 2019",
             "description": "Durant mon stage à Taikonauten, j'ai réalisé le développement du nouveau site d'Hypatos."
           },
-          "supertrash": {
-            "date": "Février 2020",
-            "description": "Pour ce projet de design, nous avons créé en équipe un site dédié à l'événement Supertrash. \"Vous voulez être aidé dans la gestion de vos déchets sur votre festival ? Supertrash vous offre la possibilité d'avoir un design pour votre containers à ordure placés sur le lieu de votre festival\""
+          "sesam": {
+            "date": "De janvier à juin 2021",
+            "description": "Avec une équipe de 6 camarades de HETIC, nous avons durant 6 mois développé un projet entrepreneurial basé sur le recrutement.",
+            "title": "Sesam"
           },
           "title": "projets",
           "vendredi": {
@@ -40,11 +37,6 @@
             "date": "Octobre 2019",
             "description": "Durant mon stage à Taikonauten, j'ai travaillé sur une animation de Noël pour Weisser Ring. Cette animation peut ne pas apparaître s'il n'est pas encore l'heure de Noël ❄️",
             "title": "Weisser Ring - Animation de Noël"
-          },
-          "wizer": {
-            "date": "Octobre 2018",
-            "description": "Pour un project scolaire, nous avons du créer un produit en rapport avec la lecture. Nous avons décider de réfléchir à une application qui facilite le stockage de données d'un article. J'ai développé un mini-site pour présenter ce projet d'application.",
-            "title": "Mini site pour une application"
           }
         }
       }

@@ -39,12 +39,12 @@ export default {
           ),
         },
         {
-          slug: 'supertrash',
-          title: 'Supertrash',
-          date: this.$t('components.main.sections.projects.supertrash.date'),
-          link: 'https://gitlab.com/mattmlz-school/supertrash',
+          slug: 'sesam',
+          title: this.$t('components.main.sections.projects.sesam.title'),
+          date: this.$t('components.main.sections.projects.sesam.date'),
+          link: 'https://sesamapp.com',
           description: this.$t(
-            'components.main.sections.projects.supertrash.description'
+            'components.main.sections.projects.sesam.description'
           ),
         },
         {
@@ -63,22 +63,6 @@ export default {
           link: 'https://hypatos.ai/',
           description: this.$t(
             'components.main.sections.projects.hypatos.description'
-          ),
-        },
-        {
-          slug: 'ecologia',
-          title: 'Ecologia',
-          date: this.$t('components.main.sections.projects.ecologia.date'),
-          description: this.$t(
-            'components.main.sections.projects.ecologia.description'
-          ),
-        },
-        {
-          slug: 'wizer',
-          title: this.$t('components.main.sections.projects.wizer.title'),
-          date: this.$t('components.main.sections.projects.wizer.date'),
-          description: this.$t(
-            'components.main.sections.projects.wizer.description'
           ),
         },
         {
