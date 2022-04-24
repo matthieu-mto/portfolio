@@ -6,8 +6,8 @@
           "freelance": "Freelance consultant",
           "hobby": "Technology enthusiastic",
           "job": "Full stack web developer at ",
-          "oldJob": "Ex web developer at ",
-          "studentAt": "Ex-student at",
+          "oldJob": "Former web developer at ",
+          "studentAt": "Former student at",
           "title": "about"
         },
         "playlists": {
@@ -16,7 +16,7 @@
         "projects": {
           "graduationVideo": {
             "date": "June 2018",
-            "description": "I had the opportunity to work with the ex-director of HETIC (Jean-Christophe BEAUX) to create and edit the graduation video for the 2017's promotion of HETIC.",
+            "description": "I had the opportunity to work with the former director of HETIC (Jean-Christophe BEAUX) to create and edit the graduation video for the 2017's promotion of HETIC.",
             "titre": "Video realisation for HETIC graduation"
           },
           "hypatos": {

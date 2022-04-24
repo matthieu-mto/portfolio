@@ -44,7 +44,6 @@ export default {
   computed: {
     headerElements() {
       return [
-        this.$t('pages.index.header.student'),
         this.$t('pages.index.header.job'),
         this.$t('pages.index.header.freelance'),
       ]
