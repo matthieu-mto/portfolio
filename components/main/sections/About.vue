@@ -8,6 +8,12 @@
         />
         <ul class="section__about--description gr-12">
           <ListElement
+            :text="$t('components.main.sections.about.job')"
+            link="https://www.reedmackay.com/fr/"
+            link-text="Frequent Flyer Travel Paris - Reed & Mackay"
+            class="element--margin element--small"
+          />
+          <ListElement
             :text="$t('components.main.sections.about.studentAt')"
             link="https://www.hetic.net/"
             link-text="HETIC"
