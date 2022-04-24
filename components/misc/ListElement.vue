@@ -1,12 +1,17 @@
 <template>
   <li class="element">
     {{ text }}
-    <a v-if="link" :href="link" class="element__link">
+    <a v-if="link" :href="link" class="element__link" target="_blank">
       {{ linkText }}
     </a>
 
     <template v-for="(linkItem, index) in links" v-else-if="links">
-      <a :key="index" :href="linkItem.url" class="element__link">
+      <a
+        :key="index"
+        :href="linkItem.url"
+        class="element__link"
+        target="_blank"
+      >
         {{ linkItem.text }}
       </a>
       <span
