@@ -14,15 +14,11 @@
             class="element--margin element--small"
           />
           <ListElement
-            :text="$t('components.main.sections.about.job')"
-            link="https://vendredi.cc/"
-            link-text="Vendredi"
-            class="element--margin element--small"
-          />
-          <ListElement
             :text="$t('components.main.sections.about.oldJob')"
-            link="https://taikonauten.com/"
-            link-text="Taikonauten"
+            :links="[
+              { url: 'https://taikonauten.com/', text: 'Taikonauten' },
+              { url: 'https://vendredi.cc', text: 'Vendredi' },
+            ]"
             class="element--margin element--small"
           />
           <ListElement

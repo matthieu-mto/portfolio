@@ -4,6 +4,19 @@
     <a v-if="link" :href="link" class="element__link">
       {{ linkText }}
     </a>
+
+    <template v-for="(linkItem, index) in links" v-else-if="links">
+      <a :key="index" :href="linkItem.url" class="element__link">
+        {{ linkItem.text }}
+      </a>
+      <span
+        v-if="index !== links.length - 1"
+        :key="index"
+        class="element__separator"
+      >
+        &
+      </span>
+    </template>
   </li>
 </template>
 
@@ -20,6 +33,10 @@ export default {
       type: String,
       default: null,
       required: false,
+    },
+    links: {
+      type: Array,
+      default: null,
     },
     linkText: {
       type: String,
@@ -46,17 +63,9 @@ export default {
     color: inherit;
     outline: none;
   }
-  &--margin {
-    margin-bottom: $margin-10;
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-  &--small {
-    font-size: $font-size-16;
-    @include media(s, m) {
-      font-size: $font-size-20;
-    }
+
+  &__separator {
+    margin: 0 5px;
   }
 }
 </style>
