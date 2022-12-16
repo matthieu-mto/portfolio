@@ -10,7 +10,7 @@
           <ListElement
             :text="$t('components.main.sections.about.job')"
             link="https://www.reedmackay.com/fr/"
-            link-text="Frequent Flyer Travel Paris - Reed & Mackay"
+            link-text="Reed & Mackay France"
             class="element--margin element--small"
           />
           <ListElement
