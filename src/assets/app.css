@@ -1,0 +1,35 @@
+/* Page-level styling on top of the Modernist design system.
+   Component-scoped rules live in the .vue files; this holds the globals and
+   the shared layout container. */
+
+html { scroll-behavior: smooth; }
+body { margin: 0; }
+
+a { color: var(--color-text); }
+a:hover { color: color-mix(in srgb, var(--color-text) 65%, transparent); }
+
+/* The design uses ink, not accent, for its single call to action. */
+.btn-primary {
+  background: var(--color-text);
+  border-color: var(--color-text);
+  color: var(--color-bg);
+}
+.btn-primary:hover,
+.btn-primary:active {
+  background: color-mix(in srgb, var(--color-text) 85%, #fff);
+  border-color: color-mix(in srgb, var(--color-text) 85%, #fff);
+  color: var(--color-bg);
+}
+
+/* Shared page rhythm: one measure, one gutter. */
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.container-padded {
+  padding: 0 var(--space-6);
+}
+
+@media (max-width: 480px) {
+  .container-padded { padding: 0 var(--space-4); }
+}
