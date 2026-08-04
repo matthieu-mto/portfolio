@@ -11,6 +11,21 @@ npm run build    # → dist/
 npm run preview
 ```
 
+## Déploiement
+
+Cloudflare Pages, projet `portfolio`. Chaque branche a sa preview
+(`https://<branche>.portfolio-5a7.pages.dev`).
+
+Sa configuration de build vit dans le dashboard, pas ici, et deux points du
+repo en dépendent :
+
+- La build command est `npm run generate`, hérité de la version Nuxt.
+  D'où le script `generate` du `package.json`, simple alias de `vite build` —
+  **le supprimer casse le déploiement** tant que le dashboard n'est pas passé
+  à `npm run build`. Le build output directory est `dist`, ce que Vite produit.
+- `.node-version` épingle Node 22 : l'image de build v1 de Pages est encore
+  sur Node 12, que Vite 6 ne supporte pas.
+
 ## Where things live
 
 | Path | Role |
